@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion  } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import ContainerBox from "../layout/ContainerBox";
 import { fadeIn, staggerChildren } from "@/utils/motion";

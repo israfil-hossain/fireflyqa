@@ -3,12 +3,11 @@
 // components/Footer.js
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
-import { useState } from "react";
 import "./footer.css";
 import ContainerBox from "../layout/ContainerBox";
 
 export default function Footer() {
-  const [hoverEmail, setHoverEmail] = useState(false);
+  // const [setHoverEmail] = useState(false);
 
   return (
     <footer className=" ">
@@ -33,8 +32,8 @@ export default function Footer() {
               <motion.div
                 className="mt-10 p-4 lg:px-8 bg-[#FEC75A] text-black  lg:rounded-t-lg flex space-x-5 justify-between"
                 whileHover={{ scale: 1.05 }}
-                onHoverStart={() => setHoverEmail(true)}
-                onHoverEnd={() => setHoverEmail(false)}
+                // onHoverStart={() => setHoverEmail(true)}
+                // onHoverEnd={() => setHoverEmail(false)}
               >
                 <div className="flex flex-col space-y-2">
                   <div>Email me at</div>

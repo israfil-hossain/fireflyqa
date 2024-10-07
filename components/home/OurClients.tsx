@@ -13,11 +13,11 @@ export default function OurClients() {
   const [current, setCurrent] = useState(0);
 
   const nextTestimonial = () => {
-    setCurrent((prev:any) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    setCurrent((prev:number) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
   const prevTestimonial = () => {
-    setCurrent((prev:any) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setCurrent((prev:number) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
 
   return (

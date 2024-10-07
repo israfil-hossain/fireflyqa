@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // Disable the rule that bans TypeScript comments like @ts-ignore
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/react-in-jsx-scope": "off"
+  }
 }

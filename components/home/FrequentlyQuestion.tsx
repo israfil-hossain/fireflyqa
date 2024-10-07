@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import CustomAccordion from "../common/CustomAccordion";
 import { faqItems } from "@/constants/frequentlyQuestion";
 import ContainerBox from "../layout/ContainerBox";
