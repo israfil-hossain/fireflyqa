@@ -8,7 +8,7 @@ import { pointer1, pointer2, pointer3, pointer4 } from "@/assets";
 
 export const HowToWork = () => {
   return (
-    <div className="bg-grey">
+    <div className="bg-white">
         <ContainerBox>
       <section className=" text-black py-16">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 grid-cols-1">

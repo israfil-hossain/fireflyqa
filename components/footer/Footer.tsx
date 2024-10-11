@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import "./footer.css";
 import ContainerBox from "../layout/ContainerBox";
+import { logo } from "@/assets";
+import Image from "next/image";
 
 export default function Footer() {
   // const [setHoverEmail] = useState(false);
@@ -22,9 +24,7 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
               className="space-y-4 flex flex-col justify-end"
             >
-              <h3 className="text-2xl font-bold text-white">
-                {"{Flowentech}"}
-              </h3>
+              <Image src={logo} alt={logo} width={120} height={80} />
               <p className="text-gray-300 max-w-xs pb-8">
                 We are always open to discuss your project and improve your
                 online presence.

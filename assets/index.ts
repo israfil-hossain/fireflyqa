@@ -10,7 +10,17 @@ import template from './template.svg';
 import delivery from './quick_delivery.svg'; 
 import approach from './approach.svg'; 
 import showcase1 from './showcase1.png'; 
-import showcase2 from './showcase2.png'
+import showcase2 from './showcase2.png'; 
+import web from './icons/web.svg'; 
+import software_icon from './icons/software.svg'; 
+import testing from './icons/testing.svg'; 
+import mobile from './icons/mobile.svg'; 
+import logo from './logo.svg'; 
+import logo2 from './logo2.svg'; 
+import no_code from './icons/no_code.svg'; 
+import saas from './icons/saas.svg'; 
+import consultency from './icons/consultency.svg'; 
+
 
 export {
     pointer1,
@@ -25,5 +35,14 @@ export {
     delivery, 
     approach,
     showcase1,
-    showcase2
+    showcase2, 
+    web, 
+    logo, 
+    logo2,
+    software_icon, 
+    mobile, 
+    testing,
+    saas, 
+    no_code,
+    consultency
 }

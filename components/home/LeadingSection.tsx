@@ -1,0 +1,38 @@
+"use client";
+
+import { featureData } from "@/constants/featureData";
+import { containerVariants, itemVariants } from "@/utils/motion";
+import { motion } from "framer-motion";
+import ContainerBox from "../layout/ContainerBox";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+export default function LeadingSection() {
+  return (
+    <section className="bg-grey py-12">
+      <ContainerBox className="flex justify-between w-full space-x-5">
+        <div className="text-start mb-12 items-start flex flex-col justify-start lg:w-1/2 w-full">
+          <div className="bg-tintblue h-2 w-20  rounded-md mb-4"></div>
+          <h3 className="text-3xl text-start font-semibold text-tintblue ">
+           Leading companies trust us <br/> <span className="text-primary font-bold text-3xl">to develop software</span>
+          </h3>
+
+          <p className="font-normal text-lg pt-5">We <span className="text-primary">add development capacity</span> to tech teams. Our value isn't limited to building teams but is equally distributed 
+          accross the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.</p>
+          
+          <Link href="/about-us" className="text-primary text-[18px] font-normal text-center flex space-x-1 items-center pt-8"><p>See more Informations</p> <ArrowRight size={18} /></Link>
+        </div>
+
+        <motion.div
+          className="bg-blue-400  lg:w-1/2 w-full"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
+          
+        </motion.div>
+      </ContainerBox>
+    </section>
+  );
+}
