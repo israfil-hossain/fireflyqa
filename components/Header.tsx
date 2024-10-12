@@ -10,28 +10,28 @@ export const Header = () => {
           <Image src={logo} alt="logo" width={120} height={80} className="w-[180px] h-[85px]"/>
         </Link>
         <nav className="hidden md:flex space-x-6">
-          <Link href="#" className="hover:text-yellow-300 transition-colors">
+          <Link href="/" className="hover:text-yellow-300 transition-colors">
             Home
           </Link>
-          <Link href="#" className="hover:text-yellow-300 transition-colors">
+          <Link href="about-us" className="hover:text-yellow-300 transition-colors">
             About us
           </Link>
-          <Link href="#" className="hover:text-yellow-300 transition-colors">
+          <Link href="feature" className="hover:text-yellow-300 transition-colors">
             Features
           </Link>
-          <Link href="#" className="hover:text-yellow-300 transition-colors">
+          <Link href="pricing" className="hover:text-yellow-300 transition-colors">
             Pricing
           </Link>
-          <Link href="#" className="hover:text-yellow-300 transition-colors">
+          <Link href="/faq" className="hover:text-yellow-300 transition-colors">
             FAQ
           </Link>
-          <Link href="#" className="hover:text-yellow-300 transition-colors">
+          <Link href="/blog" className="hover:text-yellow-300 transition-colors">
             Blog
           </Link>
         </nav>
-        <button className="bg-[#5454D4] px-6 py-2 rounded-full hover:bg-[#4646B3] transition-colors">
+        <Link href="contact-us" className="bg-[#5454D4] px-6 py-2 rounded-full hover:bg-[#4646B3] transition-colors">
           Contact us
-        </button>
+        </Link>
       </div>
     </header>
   );
