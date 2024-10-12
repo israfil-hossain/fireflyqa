@@ -11,7 +11,7 @@ import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import clsx from "clsx";
 import Image from "next/image";
-import { Autoplay, EffectFade, Navigation, Scrollbar,Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Scrollbar,Pagination } from "swiper/modules";
 
 export default function BannerSlider({
   data,
