@@ -22,10 +22,10 @@ export const Header = () => {
           <Link href="pricing" className="hover:text-yellow-300 transition-colors">
             Pricing
           </Link>
-          <Link href="/faq" className="hover:text-yellow-300 transition-colors">
+          <Link href="faq" className="hover:text-yellow-300 transition-colors">
             FAQ
           </Link>
-          <Link href="/blog" className="hover:text-yellow-300 transition-colors">
+          <Link href="blog" className="hover:text-yellow-300 transition-colors">
             Blog
           </Link>
         </nav>

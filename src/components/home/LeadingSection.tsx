@@ -17,8 +17,8 @@ export default function LeadingSection() {
            Leading companies trust us <br/> <span className="text-primary font-bold text-3xl">to develop software</span>
           </h3>
 
-          <p className="font-normal text-lg pt-5">We <span className="text-primary">add development capacity</span> to tech teams. Our value isn't limited to building teams but is equally distributed 
-          accross the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.</p>
+          <p className="font-normal text-lg pt-5">We <span className="text-primary">add development capacity</span> {`to tech teams. Our value isn't limited to building teams but is equally distributed 
+          accross the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.`}</p>
           
           <Link href="/about-us" className="text-primary text-[18px] font-normal text-center flex space-x-1 items-center pt-8"><p>See more Informations</p> <ArrowRight size={18} /></Link>
         </div>

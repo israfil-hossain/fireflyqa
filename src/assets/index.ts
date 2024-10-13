@@ -21,6 +21,8 @@ import no_code from './icons/no_code.svg';
 import saas from './icons/saas.svg'; 
 import consultency from './icons/consultency.svg'; 
 import women from './women-writting.png'; 
+import aboutus from './aboutus.png'; 
+import features from './features.svg'; 
 
 export {
     pointer1,
@@ -45,5 +47,7 @@ export {
     saas, 
     no_code,
     consultency,
-    women
+    women, 
+    aboutus, 
+    features
 }

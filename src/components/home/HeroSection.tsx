@@ -13,8 +13,8 @@ export const HeroSection = () => {
   return (
     <div className=" pt-16 parent">
       <div className="magicpattern"/>
-      <ContainerBox className="h-[70vh]">
-      <div className="flex flex-col lg:flex-row items-center justify-between ">
+      <ContainerBox className="h-[65vh]">
+      <div className="flex flex-col lg:flex-row items-start justify-between ">
         <motion.div
           className="lg:w-1/2 mb-12 lg:mb-0"
           initial="initial"
