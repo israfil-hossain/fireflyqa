@@ -11,9 +11,9 @@ export default function DevelopmentSection() {
     <section className="bg-accent py-12">
       <ContainerBox>
         <div className="text-center mb-12 items-center flex flex-col justify-center">
-          <h2 className="text-gray-600">Development</h2>
-          <h3 className="text-3xl font-semibold text-tintblue max-w-lg">
-            Our design and <span className="text-bold">development approach</span>
+          <h2 className="text-gray-600">/development</h2>
+          <h3 className="text-3xl font-semibold  max-w-lg">
+            Our design and <br/><span className="font-bold text-tintblue">development approach</span>
           </h3>
         </div>
 
@@ -23,7 +23,7 @@ export default function DevelopmentSection() {
           initial="hidden"
           animate="show"
         >
-          {developmentData.map((feature) => (
+          {developmentData.map((feature:any) => (
             <motion.div
               key={feature.id}
               className="bg-white p-6 rounded-lg text-start flex space-x-5"
@@ -31,7 +31,7 @@ export default function DevelopmentSection() {
             >
               <div className="mb-4 ">
                 <div className={feature.className}>
-                  <Image src={feature.icon} alt="icon" width={100} height={100} className="w-6 h-6 bg-black" />
+                  <Image src={feature.icon} alt="icon" width={100} height={100} className="w-6 h-6 " />
                 </div>
               </div>
               <div>

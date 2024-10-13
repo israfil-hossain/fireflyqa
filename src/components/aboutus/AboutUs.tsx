@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../common/Banner'
 import aboutus from '@/assets/aboutus.png'
 import DevelopmentSection from './Development'
+import OurtechStack from './OurtechStack'
 
 export const AboutUs = () => {
   return (
@@ -12,6 +13,7 @@ export const AboutUs = () => {
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
         banner={aboutus}/>
        <DevelopmentSection />
+       <OurtechStack />
     </div>
   )
 }
