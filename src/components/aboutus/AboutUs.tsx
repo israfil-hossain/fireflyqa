@@ -3,6 +3,7 @@ import Banner from '../common/Banner'
 import aboutus from '@/assets/aboutus.png'
 import DevelopmentSection from './Development'
 import OurtechStack from './OurtechStack'
+import TimelineWorks from './TimelineWorks'
 
 export const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ export const AboutUs = () => {
         banner={aboutus}/>
        <DevelopmentSection />
        <OurtechStack />
+       <TimelineWorks />
     </div>
   )
 }
