@@ -1,10 +1,9 @@
 "use client";
 
-import { containerVariants, itemVariants } from "@/utils/motion";
+import { itemVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import ContainerBox from "../layout/ContainerBox";
 import Image from "next/image";
-import { developmentData } from "@/constants/developmentData";
 import { mission, vision } from "@/assets";
 
 export default function MissonVission() {
