@@ -4,6 +4,7 @@ import aboutus from '@/assets/aboutus.png'
 import DevelopmentSection from './Development'
 import OurtechStack from './OurtechStack'
 import TimelineWorks from './TimelineWorks'
+import MissonVission from './MissonVission'
 
 export const AboutUs = () => {
   return (
@@ -16,6 +17,7 @@ export const AboutUs = () => {
        <DevelopmentSection />
        <OurtechStack />
        <TimelineWorks />
+       <MissonVission />
     </div>
   )
 }

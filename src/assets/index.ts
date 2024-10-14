@@ -23,6 +23,9 @@ import consultency from './icons/consultency.svg';
 import women from './women-writting.png'; 
 import aboutus from './aboutus.png'; 
 import features from './features.svg'; 
+import tropy from './icons/tropy.svg'; 
+import mission from './mission.png'; 
+import vision from './vision.png'; 
 
 export {
     pointer1,
@@ -49,5 +52,8 @@ export {
     consultency,
     women, 
     aboutus, 
-    features
+    features, 
+    tropy, 
+    mission, 
+    vision
 }

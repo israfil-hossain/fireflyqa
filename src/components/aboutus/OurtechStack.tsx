@@ -29,8 +29,8 @@ const OurtechStack = () => {
             Our <span className="font-bold text-tintblue">Tech Stack</span>
           </h3>
         </div>
-      <div className="text-center items-center flex flex-col justify-center items-center w-full">
-        <Tabs defaultValue="backend" className="w-full items-center flex flex-col justify-center items-center">
+      <div className="text-center items-center flex flex-col justify-center  w-full">
+        <Tabs defaultValue="backend" className="w-full flex flex-col justify-center items-center">
           <TabsList className="flex justify-center space-x-4 mb-6">
             <TabsTrigger value="backend" className="font-medium lg:text-[18px] text-[16px]">Backend</TabsTrigger>
             <TabsTrigger value="frontend" className="font-medium lg:text-[18px] text-[16px]">Frontend</TabsTrigger>
