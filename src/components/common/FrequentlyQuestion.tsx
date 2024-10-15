@@ -1,5 +1,5 @@
 "use client";
-import CustomAccordion from "../common/CustomAccordion";
+import CustomAccordion from "./CustomAccordion";
 import { faqItems } from "@/constants/frequentlyQuestion";
 import ContainerBox from "../layout/ContainerBox";
 

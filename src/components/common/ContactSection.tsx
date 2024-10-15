@@ -36,8 +36,8 @@ export default function ContactSection() {
   };
   return (
     <div className="mb-10">
-      <ContainerBox className="flex bg-tintblue w-full justify-between px-0">
-        <div className="relative w-1/2 shadow-lg">
+      <ContainerBox className="lg:flex md:flex md:justify-between justify-center bg-tintblue w-full lg:justify-between  px-0">
+        <div className="relative lg:w-1/2 md:w-1/2 w-full shadow-lg">
           <div className="absolute inset-0 z-0 opacity-60">
             <Image
               width={500}
@@ -56,7 +56,7 @@ export default function ContactSection() {
             </p>
           </div>
         </div>
-        <div className="pt-10  pb-8 px-10 w-1/2 flex flex-col justify-center ">
+        <div className="pt-10  pb-8 px-10 lg:w-1/2 md:w-1/2 w-full flex flex-col justify-center ">
           <h2 className="text-2xl  font-semibold text-grey text-start">Send inquiry</h2>
           <p className="text-[15px] text-gray-300 font-normal text-start">
             Lorem ipsum Lorem ipsum Lorem ipsum

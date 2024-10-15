@@ -1,6 +1,6 @@
-import ContactSection from "@/components/home/ContactSection";
+import ContactSection from "@/components/common/ContactSection";
 import FeaturesSection from "@/components/home/FeatureSection";
-import { FrequentlyQuestion } from "@/components/home/FrequentlyQuestion";
+import { FrequentlyQuestion } from "@/components/common/FrequentlyQuestion";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HowToWork } from "@/components/home/HowToWork";
 import LeadingSection from "@/components/home/LeadingSection";

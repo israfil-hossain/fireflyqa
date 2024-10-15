@@ -51,3 +51,27 @@ export const featureData = [
     icon: approach,
   },
 ];
+
+export const benefitsData = [
+  {
+    id: 1,
+    title: "Customize with ease",
+    description:
+      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+    icon: approach, // Replace with actual icon if needed
+  },
+  {
+    id: 2,
+    title: "Perfectly Responsive",
+    description:
+      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+    icon: template,
+  },
+  {
+    id: 3,
+    title: "Friendly Support",
+    description:
+      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+    icon: users,
+  },
+]
