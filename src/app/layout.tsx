@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/Header";
-import Footer  from "@/components/footer/Footer";
-import { Outfit } from "next/font/google"; 
+import Footer from "@/components/footer/Footer";
+import { Outfit } from "next/font/google";
+import Providers from "@/components/provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,8 +26,10 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Flowentech | Top Software Development Agency",
-  description: "Leading software development agency offering custom web, mobile, and cloud solutions. We provide cutting-edge digital transformation services to boost your business.",
-  keywords : "software development, custom web solutions, mobile app development, cloud solutions, software agency, digital transformation",
+  description:
+    "Leading software development agency offering custom web, mobile, and cloud solutions. We provide cutting-edge digital transformation services to boost your business.",
+  keywords:
+    "software development, custom web solutions, mobile app development, cloud solutions, software agency, digital transformation",
 };
 
 export default function RootLayout({
@@ -37,12 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <body
-        className={`${outfit.variable} antialiased`}
-      >
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${outfit.variable} antialiased`}>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
