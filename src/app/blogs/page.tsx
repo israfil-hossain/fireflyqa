@@ -1,4 +1,3 @@
-
 import Blog from "@/components/blogs/Blog";
 import { getPosts } from "@/lib/requests";
 import { PostMetadata } from "@/lib/types";
@@ -16,12 +15,15 @@ export default async function Page() {
     queryKey: ["posts"],
     queryFn: getPosts,
     getNextPageParam: (
-      lastPage: {
-        node: PostMetadata;
-        cursor: string;
-      }[]
-    ) =>
-      lastPage.length < 9 ? undefined : lastPage[lastPage.length - 1].cursor,
+      lastPage: { node: PostMetadata; cursor: string }[] | undefined
+    ) => {
+      // If lastPage is undefined or has fewer than 9 items, return undefined
+      if (!lastPage || lastPage.length < 9) {
+        return undefined;
+      }
+      // Otherwise, return the cursor of the last item
+      return lastPage[lastPage.length - 1].cursor;
+    },
     initialPageParam: "",
   });
 

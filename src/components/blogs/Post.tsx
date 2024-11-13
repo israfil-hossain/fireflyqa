@@ -2,6 +2,7 @@
 
 import { getPostBySlug } from "@/lib/requests";
 import { useQuery } from "@tanstack/react-query";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 type Props = {
@@ -18,17 +19,19 @@ export default function Post({ slug }: Props) {
 
   return (
     <div>
-      <img src={data?.coverImage.url} alt="" className="w-full" />
+      <Image src={data?.coverImage.url} alt="coverimage" className="w-full" width={500} height={500}/>
       <h1 className="text-4xl lg:text-6xl text-center leading-relaxed font-bold mt-5">
         {data?.title}
       </h1>
       <p className="my-5 text-center text-xl text-gray-400">{data?.subtitle}</p>
       <div className="my-5 flex items-center justify-center text-lg">
         {data?.author.profilePicture && (
-          <img
+          <Image
             src={data?.author.profilePicture}
             alt={data?.author.name}
             className="rounded-full h-10 w-10 mr-5"
+            width={200} 
+            height={200}
           />
         )}
         {data?.author.name}
