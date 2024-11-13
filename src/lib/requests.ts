@@ -10,6 +10,13 @@ import {
 
 const endpoint = env.NEXT_PUBLIC_HASHNODE_ENDPOINT;
 const publicationId = env.NEXT_PUBLIC_HASHNODE_PUBLICATION_ID;
+const access_token = process.env.NEXT_PUBLIC_HASHNODE_ACCESS_TOKEN;
+const headers = {
+  Authorization: `Bearer ${access_token}`,
+};
+
+console.log("Publication ID:", publicationId);
+console.log("Access Token:", endpoint);
 
 export async function getBlogName() {
   const query = gql`
@@ -22,9 +29,14 @@ export async function getBlogName() {
     }
   `;
 
-  const response = await request<PublicationName>(endpoint, query, {
-    publicationId,
-  });
+  const response = await request<PublicationName>(
+    endpoint,
+    query,
+    {
+      publicationId,
+    },
+    headers
+  );
 
   return {
     title: response.publication.title,
@@ -35,40 +47,44 @@ export async function getBlogName() {
 
 export async function getPosts({ first = 9, pageParam = "" }: GetPostsArgs) {
   const query = gql`
-    query getPosts($publicationId: ObjectId!, $first: Int!, $after: String) {
-      publication(id: $publicationId) {
-        posts(first: $first, after: $after) {
-          edges {
-            node {
-              id
-              title
-              subtitle
-              slug
-              content {
-                text
-              }
-              coverImage {
-                url
-              }
-              author {
-                name
-                profilePicture
-              }
+  query getPosts($publicationId: ObjectId!, $first: Int!, $after: String) {
+    publication(id: $publicationId) {
+      posts(first: $first, after: $after) {
+        edges {
+          node {
+            id
+            title
+            subtitle
+            slug
+            content {
+              text
             }
-            cursor
+            coverImage {
+              url
+            }
+            author {
+              name
+              profilePicture
+            }
           }
+          cursor
         }
       }
     }
-  `;
+  }
+`;
 
-  const response = await request<GetPostsResponse>(endpoint, query, {
-    publicationId,
-    first,
-    after: pageParam,
-  });
-
-  return response.publication.posts.edges;
+  try {
+    const response = await request<GetPostsResponse>(endpoint, query, {
+      publicationId,
+      first,
+      after: pageParam,
+    });
+    console.log(response);
+    return response.publication.posts.edges;
+  } catch (error) {
+    console.error("GraphQL query error:", error);
+  }
 }
 
 export async function subscribeToNewsletter(email: string) {

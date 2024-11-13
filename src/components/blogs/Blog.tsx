@@ -8,14 +8,20 @@ import { Button } from "../ui/button";
 
 
 export default function Blog() {
+  
+  
   const { data, hasNextPage, fetchNextPage, isFetching } = useInfiniteQuery({
     queryKey: ["posts"],
     queryFn: getPosts,
-    getNextPageParam: (lastPage) =>
-      lastPage.length < 9 ? undefined : lastPage[lastPage.length - 1].cursor,
-    initialPageParam: "",
+    getNextPageParam: (lastPage) => {
+      if (!lastPage || lastPage.length === 0) {
+        return undefined;
+      }
+      return lastPage.length < 9 ? undefined : lastPage[lastPage.length - 1].cursor;
+    },
+    initialPageParam: "", // Ensure this is empty for the first request
   });
-  console.log("data", data)
+      
 
   return (
     <>

@@ -23,6 +23,7 @@ const config: Config = {
 			},
 			primary: '#2405F2',
 			secondary: '#FCD980',
+			tirtiary: '#fcd980', 
 			tintblue: '#1C1E53',
 			darkblue: '#282938',
 			grey: '#F4F6FC',

@@ -9,6 +9,7 @@ export type PublicationName = {
 };
 
 export type PostMetadata = {
+  id: string; 
   title: string;
   subtitle?: string;
   slug: string;
