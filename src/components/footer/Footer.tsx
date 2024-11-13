@@ -138,7 +138,7 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
               className="mt-8 md:mt-0 space-y-4 mb-5 pb-5 pt-5"
             >
-              <h3 className="text-2xl font-bold text-white">Let's Talk!</h3>
+              <h3 className="text-2xl font-bold text-white">{"Let's Talk!"}</h3>
               <p className="text-gray-300 text-wrap max-w-lg">
                 We are always open to discuss your project and improve your
                 online presence and help with UX/UI design challenges.
