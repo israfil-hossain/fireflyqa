@@ -5,6 +5,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import Image from "next/image";
 import { women } from "@/assets";
+import { toast } from "sonner";
 
 export default function ContactSection() {
   const initialValues = {
@@ -25,10 +26,34 @@ export default function ContactSection() {
   });
 
   // Submit function
-  const onSubmit = (
+  const onSubmit = async (
     values: any,
     { setSubmitting, resetForm }: { setSubmitting: any; resetForm: any }
   ) => {
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbxCZAiMVEPhFH7x05S-HBOYqGSNMcjh8d0d2QFwTRAhO9zVWw5ECor079HLUQEiHFsL/exec";
+
+    const formData = new URLSearchParams();
+    formData.append("entry.463545241", values.name);
+    formData.append("entry.212771309", values.email);
+    formData.append("entry.532917720", values.subject);
+    formData.append("entry.1689604989", values.message);
+    try {
+      const response = await fetch(scriptUrl, {
+        method: "POST",
+        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      });
+      if(response.ok){
+        toast.success("Form submitted successfully!");
+      }
+      else{
+        toast.error("Error Submitting Form")
+      }
+     
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      toast.error("Error Submitting Form")
+    }
     // Form submission logic
     console.log("Form data:", values);
     setSubmitting(false);

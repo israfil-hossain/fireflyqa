@@ -70,13 +70,13 @@ export default function TimelineWorks() {
       >
         {/* Central Line */}
         <div className="absolute hidden lg:block top-1/2 left-0 right-0 h-0.5 rounded-full bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 transform -translate-y-1/2"></div>
-        <div className="absolute hidden lg:block h-12 w-0.5 top-1/2 right-24 bg-gradient-to-r from-blue-400  to-indigo-500 "/>
-        <div className="absolute hidden lg:block h-12 w-0.5 bottom-1/2 left-24 bg-blue-400 "/>
-        <div className="absolute hidden lg:block h-12 w-0.5 bottom-1/2 right-96 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 "/>
-        <div className="absolute hidden lg:block h-12 w-0.5 top-1/2 left-96 bg-blue-400 "/>
+        <div className="absolute hidden lg:block h-12 w-0.5 top-1/2 right-28 bg-gradient-to-r from-blue-400  to-indigo-500 "/>
+        <div className="absolute hidden lg:block h-12 w-0.5 bottom-1/2 left-20 bg-blue-400 "/>
+        <div className="absolute hidden lg:block h-12 w-0.5 bottom-1/2 right-80 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 "/>
+        <div className="absolute hidden lg:block h-12 w-0.5 top-1/2 left-80 bg-blue-400 "/>
 
-        <div className="absolute hidden lg:block h-12 w-0.5 bottom-1/2 left-[640px] bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 "/>
-        <div className="absolute hidden lg:block h-12 w-0.5 top-1/2 right-[620px] bg-blue-400 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500"/>
+        <div className="absolute hidden lg:block h-12 w-0.5 bottom-1/2 left-[520px] bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 "/>
+        <div className="absolute hidden lg:block h-12 w-0.5 top-1/2 right-[530px] bg-blue-400 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500"/>
         {/* Steps */}
         <div className="hidden lg:flex flex-row justify-between items-center relative">
           {steps.map((step, index) => (
@@ -88,12 +88,14 @@ export default function TimelineWorks() {
               }`} // Alternating steps in large screens
             >
               {/* Step Details */}
-              <div className=" bg-white p-4 shadow-md rounded-lg max-w-[550px] border">
-                <div className="w-full flex justify-start items-center space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-400 text-white flex items-center justify-center text-[14px] font-bold">
+              <div className=" bg-white p-4 shadow-md rounded-lg min-w-[200px] max-w-[260px] border">
+                <div className="w-full flex justify-start items-center space-x-3 ">
+                  <div className="w-[15%]">
+                  <div className="w-[30px] h-[30px] rounded-full bg-gradient-to-r from-blue-500 to-purple-400 text-white flex items-center justify-center text-[14px] font-bold">
                     #{step.id} 
                   </div>
-                  <h3 className="text-base font-semibold text-gray-800 mb-2">
+                  </div>
+                  <h3 className="w-full text-[14px] font-semibold text-gray-800 mb-2 ">
                     {step.title}
                   </h3>
                 </div>

@@ -8,6 +8,7 @@ type Props = {
 };
 
 export default function BlogCard({ post }: Props) {
+  console.log("post",post)
   return (
     <Card className="flex flex-col">
       <CardHeader>
@@ -21,7 +22,7 @@ export default function BlogCard({ post }: Props) {
       </CardHeader>
       <CardContent>
         <h2 className="text-xl font-bold">
-          <Link href={`/${post.slug}`} className="hover:underline">
+          <Link href={`/blogs/${post.slug}`} className="hover:underline">
             {post.title}
           </Link>
         </h2>
@@ -40,6 +41,8 @@ export default function BlogCard({ post }: Props) {
         <p className="text-gray-500 line-clamp-4 mt-3">
           {post.subtitle || post.content.text}
         </p>
+        <Link href={`/blogs/${post.slug}`} className="hover:underline">
+        read more ... </Link>
       </CardContent>
     </Card>
   );
