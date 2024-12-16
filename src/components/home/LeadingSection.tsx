@@ -6,11 +6,13 @@ import ContainerBox from "../layout/ContainerBox";
 // import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { development } from "@/assets";
 
 export default function LeadingSection() {
   return (
     <section className="bg-grey py-12">
-      <ContainerBox className="flex justify-between w-full space-x-5">
+      <ContainerBox className="flex lg:flex-row flex-col  lg:justify-between w-full lg:space-x-5 space-y-5">
         <div className="text-start mb-12 items-start flex flex-col justify-start lg:w-1/2 w-full">
           <div className="bg-tintblue h-2 w-20  rounded-md mb-4"></div>
           <h3 className="text-3xl text-start font-semibold text-tintblue ">
@@ -24,12 +26,12 @@ export default function LeadingSection() {
         </div>
 
         <motion.div
-          className="bg-blue-400  lg:w-1/2 w-full"
+          className="lg:w-1/2 w-full"
           variants={containerVariants}
           initial="hidden"
           animate="show"
         >
-          
+          <Image src={development} alt="development" width={800} height={100} className="object-cover w-full h-[400px] rounded-lg" />
         </motion.div>
       </ContainerBox>
     </section>

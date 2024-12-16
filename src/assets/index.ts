@@ -26,6 +26,7 @@ import features from './features.svg';
 import tropy from './icons/tropy.svg'; 
 import mission from './mission.png'; 
 import vision from './vision.png'; 
+import development from './development.jpg'; 
 
 export {
     pointer1,
@@ -55,5 +56,6 @@ export {
     features, 
     tropy, 
     mission, 
-    vision
+    vision, 
+    development
 }
