@@ -29,7 +29,6 @@ export default async function BlogPostPage({
     queryKey: ["post", params.slug],
     queryFn: () => getPostBySlug(params.slug),
   });
-  console.log("Params : ", params); 
 
   return (
     <div className="max-w-7xl w-full px-3 xl:p-0 mx-auto">

@@ -52,7 +52,6 @@ export default function ContactForm() {
       toast.error("Error Submitting Form")
     }
     // Form submission logic
-    console.log("Form data:", formData);
     setSubmitting(false);
     resetForm();
   };

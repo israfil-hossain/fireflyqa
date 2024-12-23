@@ -15,9 +15,6 @@ const headers = {
   Authorization: `Bearer ${access_token}`,
 };
 
-console.log("Publication ID:", publicationId);
-console.log("Access Token:", endpoint);
-
 export async function getBlogName() {
   const query = gql`
     query getBlogName($publicationId: ObjectId!) {
@@ -80,7 +77,6 @@ export async function getPosts({ first = 9, pageParam = "" }: GetPostsArgs) {
       first,
       after: pageParam,
     });
-    console.log(response);
     return response.publication.posts.edges;
   } catch (error) {
     console.error("GraphQL query error:", error);

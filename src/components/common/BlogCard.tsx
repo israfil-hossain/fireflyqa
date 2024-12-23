@@ -8,7 +8,6 @@ type Props = {
 };
 
 export default function BlogCard({ post }: Props) {
-  console.log("post",post)
   return (
     <Card className="flex flex-col">
       <CardHeader>
