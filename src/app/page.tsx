@@ -37,9 +37,9 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.youragency.com/images/og-image.jpg"
+          content="https://www.flowentech.com/images/og-image.jpg"
         />
-        <meta property="og:url" content="https://www.youragency.com/" />
+        <meta property="og:url" content="https://www.flowentech.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:flowentech" content="Flowentech" />
       </Head>
