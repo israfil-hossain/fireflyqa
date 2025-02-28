@@ -28,8 +28,7 @@ export const HeroSection = () => {
             Building stellar websites for early startups
           </motion.h1>
           <motion.p className="text-lg mb-8 text-gray-300" variants={fadeIn}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt.
+            FlowenTech is a leading software agency specializing in creating high-performance, user-friendly websites for early-stage startups. 
           </motion.p>
           <motion.div className="flex space-x-4" variants={fadeIn}>
             <button className="bg-[#FCD980]  text-black px-8 py-3 rounded-full hover:bg-yellow-400 transition-colors">

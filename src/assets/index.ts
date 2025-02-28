@@ -16,7 +16,7 @@ import software_icon from './icons/software.svg';
 import testing from './icons/testing.svg'; 
 import mobile from './icons/mobile.svg'; 
 import logo from './logo.svg'; 
-import logo2 from './logo2.svg'; 
+import logo2 from './short-logo.svg'; 
 import no_code from './icons/no_code.svg'; 
 import saas from './icons/saas.svg'; 
 import consultency from './icons/consultency.svg'; 

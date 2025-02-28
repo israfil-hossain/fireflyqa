@@ -1,6 +1,6 @@
 "use client";
 
-import { logo } from "@/assets";
+import { logo, logo2 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,14 +23,14 @@ export const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-bold text-white items-center h-20 w-[250px]"
+          className=""
         >
           <Image
             src={logo}
             alt="logo"
-            width={120}
-            height={80}
-            className="w-[180px] h-[85px]"
+            width={300}
+            height={120}
+            className=""
           />
         </Link>
 
@@ -91,7 +91,7 @@ export const Header = () => {
           href="https://calendly.com/flowentech"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium bg-gradient-to-r from-[#5454D4] border to-tintblue  px-6 py-2 rounded-full hover:from-yellow-400 hover:to-yellow-600 transition-colors lg:text-[16px] text-[12px]"
+          className="font-medium bg-gradient-to-r from-[#5454D4] border to-tintblue w-40 px-4  py-2 rounded-full hover:from-[#5d98ea] hover:to-[#023070] transition-colors lg:text-[16px] text-[12px]"
         >
           Schedule a Call
         </Link>

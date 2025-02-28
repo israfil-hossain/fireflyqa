@@ -12,7 +12,7 @@ export const AboutUs = () => {
        <Banner 
         pageName="About Us" 
         title="Our designs solve problems" 
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        subtitle="We deliver bespoke web development and design solutions that help businesses grow, engage customers, and scale effectively. From intuitive interfaces to seamless functionality, trust FlowenTech to transform your startup’s digital presence with cutting-edge technology and expert design."
         banner={aboutus}/>
        <DevelopmentSection />
        <OurtechStack />

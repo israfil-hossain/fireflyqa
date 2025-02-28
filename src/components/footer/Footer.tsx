@@ -86,20 +86,20 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
               className="space-y-4 flex flex-col justify-end"
             >
-              <Image src={logo} alt="Logo" width={120} height={80} />
+              <Image src={logo} alt="Logo" width={200} height={100} />
               <p className="text-gray-300 max-w-xs pb-8">
                 We are always open to discuss your project and improve your
                 online presence.
               </p>
               <motion.div
-                className="p-4 lg:px-8 bg-tirtiary text-black lg:rounded-lg flex space-x-5 justify-between"
+                className="p-4 lg:px-8 bg-tirtiary text-black lg:rounded-t-lg lg:flex flex-col space-y-4 lg:space-y-2 lg:space-x-0 justify-between"
                 whileHover={{ scale: 1.05 }}
               >
                 {/* Email section */}
                 <div className="flex flex-col space-y-2">
                   <div>Email me at</div>
                   <div className="font-bold flex space-x-3 ">
-                    <h2>contact@website.com</h2>
+                    <h2>contact@flowentech.com</h2>
                     <motion.button
                     onClick={() => handleCopy("contact@website.com", "email")}
                     whileTap={{ scale: 0.9 }} // Add button animation when clicked
@@ -116,7 +116,7 @@ export default function Footer() {
                 <div className="flex flex-col space-y-2">
                   <div>Call me at</div>
                   <div className=" flex space-x-3 ">
-                    <h2 className="font-bold text-[16px]">+123-456-7890</h2>
+                    <h2 className="font-bold text-[16px] ">+880-17235-60254</h2>
                     <motion.button
                     onClick={() => handleCopy("+123-456-7890", "phone")}
                     whileTap={{ scale: 0.9 }} // Add button animation when clicked
@@ -147,13 +147,13 @@ export default function Footer() {
               <div className="flex space-x-4">
                 {/* Social Icons */}
                 <motion.a href="#" whileHover={{ scale: 1.1 }}>
-                  <Facebook size={20} className="text-white" />
+                  <Facebook size={20} className="text-[#2c7cf1]" />
                 </motion.a>
                 <motion.a href="#" whileHover={{ scale: 1.1 }}>
-                  <Instagram className="text-white" />
+                  <Instagram className="text-[#2c7cf1]" />
                 </motion.a>
                 <motion.a href="#" whileHover={{ scale: 1.1 }}>
-                  <Linkedin size={20} className="text-white" />
+                  <Linkedin size={20} className="text-[#2c7cf1]" />
                 </motion.a>
               </div>
 
@@ -191,7 +191,7 @@ export default function Footer() {
       <ContainerBox>
         {/* Bottom section */}
         <div className="border-t border-gray-500 py-8 text-center lg:flex lg:space-y-0 space-y-5 lg:justify-between justify-center items-center">
-          <p className="text-gray-400">Copyright 2022, Flowentech.com</p>
+          <p className="text-gray-400">Copyright 2025, Flowentech.com</p>
           <motion.div
             className=""
             initial={{ opacity: 0 }}
