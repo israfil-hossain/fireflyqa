@@ -7,6 +7,7 @@ import { fadeIn, staggerChildren } from "@/utils/motion";
 import './bg.css'; 
 import { hero } from "@/assets";
 import Image from "next/image";
+import ScheduleButton from "../common/ScheduleButton";
 
 export const HeroSection = () => {
   
@@ -34,8 +35,8 @@ export const HeroSection = () => {
             <button className="bg-[#FCD980]  text-black px-8 py-3 rounded-full hover:bg-yellow-400 transition-colors">
               View our work
             </button>
-            <button className="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-              <span>View Pricing</span>
+            <button className="flex items-center space-x-2 text-white hover:text-yellow-300 transition-colors">
+              <ScheduleButton />
               <ArrowRight size={20} />
             </button>
           </motion.div>

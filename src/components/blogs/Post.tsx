@@ -1,5 +1,6 @@
 "use client";
 
+import { logo2 } from "@/assets";
 import { getPostBySlug } from "@/lib/requests";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
@@ -36,16 +37,16 @@ export default function Post({ slug }: Props) {
         />
       </div>
       <div className="my-5 flex items-center justify-center text-lg ">
-        {data?.author.profilePicture && (
+        
           <Image
-            src={data?.author.profilePicture}
-            alt={data?.author.name}
+            src={logo2}
+            alt={"flowentech"}
             className="rounded-full h-10 w-10 mr-5"
             width={200}
             height={200}
           />
-        )}
-        {data?.author.name}
+        
+        {"flowentech"}
       </div>
       <div
         className="blog-content text-xl leading-loose flex flex-col gap-5 mt-5 lg:px-16"

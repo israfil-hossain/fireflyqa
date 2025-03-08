@@ -30,7 +30,7 @@ export const Header = () => {
             alt="logo"
             width={300}
             height={120}
-            className=""
+            className="w-32 lg:w-40"
           />
         </Link>
 
@@ -86,12 +86,13 @@ export const Header = () => {
           </Link>
         </nav>
 
-        {/* Contact Button */}
+        <div className="flex space-x-1">
+          {/* Contact Button */}
         <Link
           href="https://calendly.com/flowentech"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium bg-gradient-to-r from-[#5454D4] border to-tintblue w-40 px-4  py-2 rounded-full hover:from-[#5d98ea] hover:to-[#023070] transition-colors lg:text-[16px] text-[12px]"
+          className="font-medium bg-gradient-to-r from-[#5454D4] border to-tintblue w-32 lg:w-40 px-4  py-2 rounded-full hover:from-[#5d98ea] hover:to-[#023070] transition-colors lg:text-[16px] text-[12px]"
         >
           Schedule a Call
         </Link>
@@ -159,6 +160,7 @@ export const Header = () => {
               </DrawerFooter>
             </DrawerContent>
           </Drawer>
+        </div>
         </div>
       </div>
     </header>
