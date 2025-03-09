@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        // domains: ['randomuser.me','res.cloudinary.com'],
         remotePatterns: [
             {
               hostname: "cdn.hashnode.com",
@@ -15,6 +14,10 @@ const nextConfig = {
               hostname: "res.cloudinary.com",
               protocol: "https",
             },
+            {
+              hostname: "images.unsplash.com", 
+              protocol: "https",
+            }
           ],
     }
 };

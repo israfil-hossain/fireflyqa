@@ -11,7 +11,7 @@ export default function Benefits() {
     <section className="bg-accent py-12">
       <ContainerBox>
         <div className="text-center mb-12 items-center flex flex-col justify-center">
-          <h2 className="text-gray-600">benefits</h2>
+          <h2 className="text-gray-600">/ benefits</h2>
           <h3 className="text-3xl font-semibold text-tintblue max-w-lg">
             The Benefits of working <br/> with our team
           </h3>

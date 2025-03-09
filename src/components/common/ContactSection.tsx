@@ -59,7 +59,7 @@ export default function ContactSection() {
     resetForm();
   };
   return (
-    <div className="mb-10">
+    <div className="mb-10 mt-10">
       <ContainerBox className="lg:flex md:flex md:justify-between justify-center bg-tintblue w-full lg:justify-between  px-0">
         <div className="relative lg:w-1/2 md:w-1/2 w-full shadow-lg">
           <div className="absolute inset-0 z-0 opacity-60">

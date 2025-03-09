@@ -13,15 +13,12 @@ export default function FeaturePreview() {
         <ContainerBox>
           <div className="flex lg:justify-between flex-col lg:flex-row md:flex-row lg:space-x-5 md:space-x-5 space-y-5 w-full mb-16">
             <div className="lg:text-start text-start  items-start flex flex-col lg:justify-start  lg:w-1/2 md:w-1/2 w-full">
-              <h2 className="text-gray-600 text-start">/ Use client-first</h2>
+              <h2 className="text-gray-600 text-start">/ Client-First Approach</h2>
               <h3 className="text-3xl font-semibold  max-w-lg text-tintblue pb-2">
-                Top agencies and freelancers around the world use Client-first
+                Trusted by Top Agencies & Freelancers Worldwide
               </h3>
               <p className="font-normal text-[12px] lg:text-[16px] text-wrap">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+               Leading agencies and professionals across the globe rely on our Client-first approach to streamline workflows and enhance project efficiency. Experience a seamless, structured, and scalable system designed for success.
               </p>
             </div>
 
@@ -56,15 +53,12 @@ export default function FeaturePreview() {
               />
             </motion.div>
             <div className="lg:text-start text-start  items-start flex flex-col justify-start lg:w-1/2  md:w-1/2 py-5">
-              <h2 className="text-gray-600 text-start">/ Free Revision Rounds</h2>
+              <h2 className="text-gray-600 text-start">/ Free Revisions & Maintenance</h2>
               <h3 className="text-3xl font-semibold  max-w-lg text-tintblue pb-2">
-                Get free Revisions and one week of free maintenance
+                Enjoy Unlimited Refinements & One Week of Free Support
               </h3>
               <p className="font-normal text-[12px] lg:text-[15px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              We believe in delivering perfection. Get free revision rounds to ensure your project meets your vision, plus a full week of complimentary maintenance for a seamless experience.
               </p>
             </div>
           </div>
@@ -74,15 +68,12 @@ export default function FeaturePreview() {
         <ContainerBox>
           <div className="flex lg:justify-between justify-center flex-col lg:flex-row md:flex-row lg:space-x-5 md:space-x-5 space-y-5 w-full mb-16">
             <div className="lg:text-start text-start  items-start flex flex-col lg:justify-start  lg:w-1/2 md:w-1/2 w-full">
-              <h2 className="text-gray-600 text-start"> 24/7 Support</h2>
+              <h2 className="text-gray-600 text-start"> 24/7 Priority Support</h2>
               <h3 className="text-3xl font-semibold  max-w-lg text-tintblue pb-2">
-                Working with us, you will be getting 24/7 priority support
+                Reliable Assistance Anytime, Anywhere
               </h3>
               <p className="font-normal text-[12px] lg:text-[16px] text-wrap">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              Partnering with us means you get round-the-clock priority support. Our dedicated team is always available to assist you, ensuring a smooth and hassle-free experience.
               </p>
             </div>
 
@@ -117,15 +108,12 @@ export default function FeaturePreview() {
               />
             </motion.div>
             <div className="lg:text-start text-start  items-start flex flex-col justify-start lg:w-1/2  md:w-1/2 py-5">
-              <h2 className="text-gray-600 text-start">/ Quick Delivery</h2>
+              <h2 className="text-gray-600 text-start">/ Fast & Reliable Delivery</h2>
               <h3 className="text-3xl font-semibold  max-w-lg text-tintblue pb-2">
-                Guranteed 1 week delivery for standard five pager website
+               Guaranteed Quick Turnaround
               </h3>
               <p className="font-normal text-[12px] lg:text-[15px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                We prioritize speed and quality, ensuring your website is delivered promptly and to the highest standards, with no compromise on excellence.
               </p>
             </div>
           </div>

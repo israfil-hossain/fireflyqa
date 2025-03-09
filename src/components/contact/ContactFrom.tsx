@@ -2,6 +2,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toast } from "sonner";
 import * as Yup from "yup";
+import ContainerBox from "../layout/ContainerBox";
+import Image from "next/image";
 
 export default function ContactForm() {
   // Initial form values
@@ -27,7 +29,8 @@ export default function ContactForm() {
     values: any,
     { setSubmitting, resetForm }: { setSubmitting: any; resetForm: any }
   ) => {
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxCZAiMVEPhFH7x05S-HBOYqGSNMcjh8d0d2QFwTRAhO9zVWw5ECor079HLUQEiHFsL/exec";
+    const scriptUrl =
+      "https://script.google.com/macros/s/AKfycbxCZAiMVEPhFH7x05S-HBOYqGSNMcjh8d0d2QFwTRAhO9zVWw5ECor079HLUQEiHFsL/exec";
 
     const formData = new URLSearchParams();
     formData.append("entry.463545241", values.name);
@@ -40,16 +43,14 @@ export default function ContactForm() {
         body: formData,
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
       });
-      if(response.ok){
+      if (response.ok) {
         toast.success("Form submitted successfully!");
+      } else {
+        toast.error("Error Submitting Form");
       }
-      else{
-        toast.error("Error Submitting Form")
-      }
-     
     } catch (error) {
       console.error("Error submitting the form:", error);
-      toast.error("Error Submitting Form")
+      toast.error("Error Submitting Form");
     }
     // Form submission logic
     setSubmitting(false);
@@ -57,14 +58,33 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
-        <h2 className="text-3xl font-bold text-center mb-4">Contact Us</h2>
-        <p className="text-center text-gray-600 mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
-        </p>
+    <ContainerBox className="lg:flex md:flex md:justify-between justify-center bg-tintblue w-full lg:justify-between  py-10 px-4 my-12">
+      <div className="relative lg:w-1/2 md:w-1/2 w-full shadow-lg">
+        <div className="absolute inset-0 z-0 opacity-60">
+          <Image
+            width={500}
+            height={500}
+            src={
+              "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741544386/burst-kUqqaRjJuw0-unsplash_msokd1.jpg"
+            }
+            alt={"showcase"}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative h-full w-full p-8 z-10 bg-gradient-to-b from-[#1c1e53a5] to-[#1c1e535b] flex flex-col justify-center  ">
+          <h3 className="text-5xl font-medium text-grey text-center mb-4">
+            {"We'd love to hear from you"}
+          </h3>
+          <p className="mb-4 text-white text-center font-normal ">
+            {
+              "Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions"
+            }
+          </p>
+        </div>
+      </div>
 
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+        <h2 className="text-3xl font-bold text-center mb-4">We are Happy To Help!</h2>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -163,6 +183,6 @@ export default function ContactForm() {
           )}
         </Formik>
       </div>
-    </div>
+    </ContainerBox>
   );
 }

@@ -31,16 +31,12 @@ export const expert = "https://res.cloudinary.com/dpc1nydxn/image/upload/v168577
 export const automation = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1685777949/Flowentech/automation_sdssy5.jpg";
 export const customize = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1685777942/Flowentech/customize_zrlgzp.png";
 export const automation_logo = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1685777935/Flowentech/automation2_xriwk1.jpg";
-
-export const devops = "https://res.cloudinary.com/dpc1nydxn/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1690827283/Flowentech/7053234_hyvnze.jpg";
-export const nocode = "https://res.cloudinary.com/dpc1nydxn/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1690827581/Flowentech/Coding_and_Programming_Courses_for_Kids_3_D_Blue_Poster_d9b2jn.png";
-
 export  const whatsapp = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695741838/Flowentech/whatsapp_nevzmj.webp";
 
 // Technologies Section Icon ... 
 
 // frontend icons
-export const nextjs = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740735/Flowentech/next_fvip3r.webp";
+export const nextjs = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741508117/nextjs_qoqaxf.png";
 export const mui = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740735/Flowentech/mui_sbfxim.webp"; 
 export const css = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695741842/Flowentech/css_kazeqy.webp";
 export const html = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695741831/Flowentech/Html_ko6o9w.webp";
@@ -50,11 +46,10 @@ export const reactjs = "https://res.cloudinary.com/dpc1nydxn/image/upload/v16857
 export const redux = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695741826/Flowentech/redux_scee5h.webp";
 export const threejs = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1685778103/Flowentech/threejs_ol4v9r.svg";
 export const antd = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740778/Flowentech/antd_etqfqe.webp"; 
-
 export const bootstrap = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740736/Flowentech/bootstrap_nvwm1a.webp";
 export const tailwind = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740735/Flowentech/tailwind_t1rwvt.webp"; 
 
-// mobile icons 
+// mobile development icons 
 export const reactnative = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740734/Flowentech/reactnative_oaja8k.webp"; 
 export const flutter = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740734/Flowentech/Flutter_oablno.webp";
 
@@ -64,24 +59,27 @@ export const wordpress = "https://res.cloudinary.com/dpc1nydxn/image/upload/v169
 export const bubble_icon = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1690815703/Flowentech/bubble_1_zwc5xk.webp";
 export const bubble2 = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1685778099/Flowentech/wordpress_wzmdlk.jpg";
 
-
 // backend icons
 export const nodejs = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695741824/Flowentech/nodejs_wklims.webp";
 export const github = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1690743237/Flowentech/git_jrszmq.png";
 export const net = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740735/Flowentech/dotnet_rgpb3u.webp"; 
 export const springtboot = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740735/Flowentech/springboot_vldilv.webp"; 
 export const java = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740734/Flowentech/java_ynyqdc.webp";
-export const express = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740735/Flowentech/springboot_vldilv.webp"; 
+export const express = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740734/Flowentech/express_t3gnej.webp" ; 
 export const docker = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1685778101/Flowentech/docker_iaiafu.png";
 
 // Db  
-
 export const sql = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740734/Flowentech/sql_fvyqqs.webp"; 
 export const mysql = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695753011/Flowentech/mysql_l1fizt.webp"; 
 export const postgresql = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695753010/Flowentech/postgresql_ugx0d7.webp";
 export const mongodb = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695740734/Flowentech/mongodb_oi2sp5.webp"; 
 
-
+//devops 
+export const devops = "https://res.cloudinary.com/dpc1nydxn/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1690827283/Flowentech/7053234_hyvnze.jpg";
+export const nocode = "https://res.cloudinary.com/dpc1nydxn/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1690827581/Flowentech/Coding_and_Programming_Courses_for_Kids_3_D_Blue_Poster_d9b2jn.png";
+export const nginx = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741508390/images_yyl44e.png"; 
+export const aws = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741508390/aws_ecpduw.svg"; 
+export const gcp = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741508390/gc_syqd8p.svg"; 
 
 //About us section
 export const medicine = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1695632939/Flowentech/medicine_n7kt9e.webp";
@@ -127,3 +125,54 @@ export const emoji = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1698241
 export const aboutus = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1698241429/Flowentech/aboutus_fjgb3a.webp";
 export const feedback = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1698241432/Flowentech/client_ej1v8b.webp"; 
 export const notfound = "https://res.cloudinary.com/dpc1nydxn/image/upload/v1698241442/Flowentech/notfound_opmiij.svg";
+
+// brandlogo 
+export const Brand = [
+    {
+        name: "Interior Wale",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531932/Interior_Wale-with-bg_a31iag.png"
+    },
+    {
+        name: "Etop",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531907/final_logo_dpma7y.png"
+    },
+    {
+        name: "Fashionpy",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531891/logo_300x100_sqo3wj.png"
+    },
+    {
+        name: "Newsy",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531873/t_newsy-20218145.logowik.com_p3fq6p.webp"
+    },
+    {
+        name: "Raybim",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531872/t_raybim-technologies6449.logowik.com_dpuuq2.webp"
+    },
+    {
+        name: "Bora",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531872/bora_hbukhz.webp"
+    },
+    {
+        name: "Quoka",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531872/quokade_vgrelx.webp"
+    },
+    {
+        name: "Winfuture",
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531872/winfuture_fszyng.webp"
+    }, 
+    {
+        name: "Vdare", 
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531872/t_vdare4797.logowik.com_mrmfg8.webp"
+    }, 
+    {
+        name: "Kucoin", 
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741531872/kucoin_eaoxdq.webp"
+    },
+    {
+        name: "flowentrip", 
+        url: "https://res.cloudinary.com/dpc1nydxn/image/upload/v1741532729/flowentrip-high-resulation_wuco7k.png"
+    }
+];
+
+// contact - us 
+export const contactus="https://res.cloudinary.com/dpc1nydxn/image/upload/v1741543676/5114855_djoqir.jpg"; 

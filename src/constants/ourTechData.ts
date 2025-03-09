@@ -1,4 +1,4 @@
-import { antd, bootstrap, bubble_icon, css, docker, express, html, java, js, mongodb, mui, mysql, net, nextjs, nodejs, postgresql, reactjs, redux, shopify, springtboot, tailwind, threejs, typescript, wordpress } from "./assets";
+import { antd, aws, bootstrap, bubble_icon, css, docker, express, gcp, html, java, js, mongodb, mui, mysql, net, nextjs, nginx, nodejs, postgresql, reactjs, redux, shopify, springtboot, tailwind, threejs, typescript, wordpress } from "./assets";
 
 // Demo data for each tech stack category
 export const techStackData = {
@@ -9,7 +9,7 @@ export const techStackData = {
       { name: "Express", logo: express },
       { name : "Dot Net", logo: net},
       { name: "Java", logo: java },
-      { name: "Java", logo: springtboot },
+      { name: "SpringBoot", logo: springtboot },
       
     ],
     frontend: [
@@ -39,7 +39,8 @@ export const techStackData = {
    
     devops: [
       { name: "Docker", logo: docker },
-      { name: "Kubernetes", logo: docker },
-      { name: "Terraform", logo: docker },
+      { name: "Google Cloude", logo: gcp },
+      { name: "Aws", logo: aws },
+      { name: "Nginx", logo: nginx}
     ],
   };

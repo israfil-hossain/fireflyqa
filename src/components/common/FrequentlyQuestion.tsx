@@ -12,7 +12,7 @@ export const FrequentlyQuestion = () => {
             Frequently asked questions
           </h2>
           <a
-            href="#"
+            href="/contact-us"
             className="text-blue-600 hover:text-blue-800 mt-4 inline-block"
           >
             Contact us for more info

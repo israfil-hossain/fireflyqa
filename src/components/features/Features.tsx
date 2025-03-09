@@ -11,9 +11,9 @@ export const Features = () => {
   return (
     <div>
        <Banner 
-        pageName="Features" 
-        title="All the features you need" 
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        pageName="/ features" 
+        title="Everything You Need, All in One Place" 
+        subtitle="Discover a comprehensive suite of features designed to elevate your business. From seamless integrations to advanced customization, we provide the tools you need to succeed."
         banner={features}/>
         <Marque />
         <Benefits />

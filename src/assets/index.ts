@@ -27,6 +27,7 @@ import tropy from './icons/tropy.svg';
 import mission from './mission.png'; 
 import vision from './vision.png'; 
 import development from './development.jpg'; 
+import gridbanner from './gridbanner.svg'; 
 
 export {
     pointer1,
@@ -57,5 +58,6 @@ export {
     tropy, 
     mission, 
     vision, 
-    development
+    development, 
+    gridbanner
 }

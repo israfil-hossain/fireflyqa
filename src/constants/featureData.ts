@@ -10,44 +10,43 @@ import {
 export const featureData = [
   {
     id: 1,
-    title: "Uses Client First",
-    description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
-    icon: users, // Replace with actual icon if needed
+    title: "Client-First Approach",
+    description:`We prioritize your needs, ensuring a seamless design process tailored to your vision and business goals.`,
+    icon: users, 
   },
   {
     id: 2,
-    title: "Two Free Revision Round",
+    title: "Two Free Revision Rounds",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      `Your satisfaction matters. We offer two complimentary revisions to refine and perfect your design.`,
     icon: revision,
   },
   {
     id: 3,
-    title: "Template Customization",
+    title: "Customizable Templates",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      "We provide fully customizable templates, allowing you to adapt and personalize designs to match your brand identity.",
     icon: template,
   },
   {
     id: 4,
     title: "24/7 Support",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      "Our dedicated support team is available around the clock to assist you with any inquiries or concerns.",
     icon: support,
   },
   {
     id: 5,
-    title: "Quick Delivery",
+    title: "Fast & Efficient Delivery",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      "We value your time. Our streamlined workflow ensures quick turnaround times without compromising on quality.",
     icon: delivery,
   },
   {
     id: 6,
-    title: "Hands-on approach",
+    title: "Hands-On Collaboration",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      "We work closely with you at every stage, ensuring a smooth, transparent, and engaging design experience.",
     icon: approach,
   },
 ];
@@ -55,23 +54,23 @@ export const featureData = [
 export const benefitsData = [
   {
     id: 1,
-    title: "Customize with ease",
+    title: "Effortless Customization",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
-    icon: approach, // Replace with actual icon if needed
+      "Easily tailor every element to match your unique needs. Our intuitive approach ensures a seamless experience.",
+    icon: approach, // Replace with the actual icon if needed
   },
   {
     id: 2,
-    title: "Perfectly Responsive",
+    title: "Fully Responsive Design",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      "Enjoy a flawless experience on any device. Our solutions adapt perfectly to different screen sizes and resolutions.",
     icon: template,
   },
   {
     id: 3,
-    title: "Friendly Support",
+    title: "Dedicated Support",
     description:
-      "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+      "Our expert team is always ready to assist you. Get fast, friendly, and professional support whenever you need it.",
     icon: users,
   },
-]
+];

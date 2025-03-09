@@ -1,5 +1,6 @@
 import Blog from "@/components/blogs/Blog";
 import Banner from "@/components/common/Banner";
+import { Newsletter } from "@/components/common/Newsletter";
 import { getPosts } from "@/lib/requests";
 import { PostMetadata } from "@/lib/types";
 
@@ -65,6 +66,7 @@ export default async function Page() {
         </HydrationBoundary>
       </div>
     </main>
+    <Newsletter />
     </div>
   );
 }

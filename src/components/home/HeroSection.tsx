@@ -8,6 +8,7 @@ import './bg.css';
 import { hero } from "@/assets";
 import Image from "next/image";
 import ScheduleButton from "../common/ScheduleButton";
+import Link from "next/link";
 
 export const HeroSection = () => {
   
@@ -32,10 +33,10 @@ export const HeroSection = () => {
             FlowenTech is a leading software agency specializing in creating high-performance, user-friendly websites for early-stage startups. 
           </motion.p>
           <motion.div className="flex space-x-4" variants={fadeIn}>
-            <button className="bg-[#FCD980]  text-black px-8 py-3 rounded-full hover:bg-yellow-400 transition-colors">
-              View our work
-            </button>
-            <button className="flex items-center space-x-2 text-white hover:text-yellow-300 transition-colors">
+            <Link href="/contact-us" className="bg-gradient-to-r from-[#5454D4] to-tintblue border hover:bg-blue-300 cursor-pointer  text-white px-6 py-2 rounded-full  transition-colors">
+              Contact Us
+            </Link>
+            <button className="flex items-center space-x-2 text-white hover:text-blue-300 transition-colors ">
               <ScheduleButton />
               <ArrowRight size={20} />
             </button>

@@ -1,30 +1,30 @@
 export const faqItems = [
   {
     id: 1,
-    title: "How much time does it take?",
+    title: "How long does it take to complete a project?",
     subtitle: "",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The timeline for each project varies depending on its scope and complexity. We work closely with our clients to establish realistic deadlines and ensure timely delivery without compromising quality.",
   },
   {
     id: 2,
-    title: "What is your class naming convention?",
-    content: "Our class naming convention follows the BEM methodology.",
+    title: "What development methodologies do you follow?",
+    content: "We adhere to industry-standard methodologies, including Agile and Scrum, to ensure efficient project management and high-quality deliverables.",
   },
   {
     id: 3,
-    title: "How do you communicate?",
-    content: "We communicate through email, Slack, and regular meetings.",
+    title: "What communication channels do you use?",
+    content: "We maintain transparent communication through email, Slack, Zoom, and scheduled meetings to keep our clients informed and involved throughout the project lifecycle.",
   },
   {
     id: 4,
-    title: "I have a bigger project. Can you handle it?",
+    title: "Can you handle large-scale or complex projects?",
     content:
-      "Yes, we have the resources and expertise to handle large projects.",
+      "Absolutely. Our team is equipped with the expertise and resources to manage large-scale and complex projects, ensuring scalability, performance, and seamless execution.",
   },
   {
     id: 5,
-    title: "What is your class naming convention?",
-    content: "Our class naming convention is flexible for maintainability.",
+    title: "Do you provide ongoing support and maintenance?",
+    content: "Yes, we offer comprehensive post-launch support and maintenance services to ensure your software remains up-to-date, secure, and fully functional.",
   },
 ];

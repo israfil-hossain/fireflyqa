@@ -12,7 +12,6 @@ import { useMutation } from "@tanstack/react-query";
 import { subscribeToNewsletter } from "@/lib/requests";
 import { toast } from "sonner";
 import { ClientError } from "graphql-request";
-import { Button } from "../ui/button";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -92,7 +91,7 @@ export default function Footer() {
                 online presence.
               </p>
               <motion.div
-                className="p-4 lg:px-8 bg-tirtiary text-black lg:rounded-t-lg lg:flex flex-col space-y-4 lg:space-y-2 lg:space-x-0 justify-between"
+                className="p-4 lg:px-8 bg-tirtiary text-tintblue lg:rounded-t-lg lg:flex flex-col space-y-4 lg:space-y-2 lg:space-x-0 justify-between"
                 whileHover={{ scale: 1.05 }}
               >
                 {/* Email section */}
@@ -101,7 +100,7 @@ export default function Footer() {
                   <div className="font-bold flex space-x-3 ">
                     <h2>contact@flowentech.com</h2>
                     <motion.button
-                    onClick={() => handleCopy("contact@website.com", "email")}
+                    onClick={() => handleCopy("flowentech1@gmail.com", "email")}
                     whileTap={{ scale: 0.9 }} // Add button animation when clicked
                     animate={isCopied === "email" ? { scale: [1, 1.2, 1] } : {}} // Animate if copied
                     className="text-blue-500 underline text-sm"
@@ -118,7 +117,7 @@ export default function Footer() {
                   <div className=" flex space-x-3 ">
                     <h2 className="font-bold text-[16px] ">+880-17235-60254</h2>
                     <motion.button
-                    onClick={() => handleCopy("+123-456-7890", "phone")}
+                    onClick={() => handleCopy("+880-17235-60254", "phone")}
                     whileTap={{ scale: 0.9 }} // Add button animation when clicked
                     animate={isCopied === "phone" ? { scale: [1, 1.2, 1] } : {}} // Animate if copied
                     className="text-blue-500 underline text-sm"
@@ -174,7 +173,7 @@ export default function Footer() {
                     <button
                       onClick={handleSubscribe}
                       disabled={isPending}
-                      className="bg-tirtiary py-2 rounded-r-lg rounded-l-none px-3 text-black font-medium"
+                      className="bg-tirtiary py-2 rounded-r-lg rounded-l-none px-3 text-tintblue font-medium"
                     >
                       {isPending ? "Loading..." : "Subscribe"}
                     </button>

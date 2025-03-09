@@ -59,10 +59,10 @@ export default function BannerSlider({ data, className, swiperProps }: ProductsS
 
       <Swiper
         breakpoints={{
-          450: { slidesPerView: 2, spaceBetween: 20 },
-          768: { slidesPerView: 3, spaceBetween: 20 },
-          992: { slidesPerView: 4, spaceBetween: 20 },
-          1200: { slidesPerView: 4, spaceBetween: 20 },
+          450: { slidesPerView: 2, spaceBetween: 15 },
+          768: { slidesPerView: 2, spaceBetween: 25 },
+          992: { slidesPerView: 3, spaceBetween: 25 },
+          1200: { slidesPerView: 3, spaceBetween: 25 },
         }}
         centeredSlides={true}
         grabCursor={true}
@@ -79,10 +79,10 @@ export default function BannerSlider({ data, className, swiperProps }: ProductsS
         {...(swiperProps || {})}
       >
         {data?.map((feature: any, index: number) => (
-          <SwiperSlide key={index} className="pb-5 mb-5">
+          <SwiperSlide key={index} className="pb-5 mb-5 mx-2">
             <div
               onClick={() => openModal(feature)}
-              className="bg-white shadow-lg hover:shadow-xl rounded-lg p-6 cursor-pointer border border-gray-200 h-48"
+              className="bg-white shadow-lg hover:shadow-xl rounded-lg p-6 cursor-pointer border border-gray-200 h-48 w-[350px] md:w-[450px] lg:w-[480px] "
             >
               <div className="mb-3  flex items-center space-x-2">
                 <Image src={feature.icon} alt="icon" width={50} height={50} className="w-12 h-12 p-2 bg-indigo-200 justify-center items-center border rounded-full overflow-hidden"/>

@@ -11,12 +11,14 @@ const Banner = ({
   banner,
   pageName,
   optionalBg,
+  className,
 }: {
   title: string;
   subtitle: string;
   banner?: any;
   pageName: string;
   optionalBg?: React.ReactNode;
+  className?:any;
 }) => {
   return (
     <div className=" pt-16 parent">
@@ -61,7 +63,7 @@ const Banner = ({
                   alt="hero"
                   width={500}
                   height={500}
-                  className=""
+                  className={className}
                 />
               </div>
             </motion.div>

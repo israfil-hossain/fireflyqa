@@ -38,10 +38,10 @@ export const ServiceData = [
         icon: consultency
     }, 
     {
-        "id": 7,
-        "title": "Digital Marketing",
-        "description": "Boost your brand’s online presence with powerful digital marketing strategies. From SEO to social media, we help you attract, engage, and convert your audience effectively.",
-        "icon": tropy
+        id: 7,
+        title: "Digital Marketing",
+        description: `Boost your brand’s online presence with powerful digital marketing strategies. From SEO to social media, we help you attract, engage, and convert your audience effectively.`,
+        icon: tropy
     }
     
 ]

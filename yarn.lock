@@ -881,6 +881,18 @@
   dependencies:
     "@t3-oss/env-core" "0.11.1"
 
+"@tabler/icons-react@^3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.31.0.tgz#47bd53bba028f73c9756e4088b48ae1c13be2747"
+  integrity sha512-2rrCM5y/VnaVKnORpDdAua9SEGuJKVqPtWxeQ/vUVsgaUx30LDgBZph7/lterXxDY1IKR6NO//HDhWiifXTi3w==
+  dependencies:
+    "@tabler/icons" "3.31.0"
+
+"@tabler/icons@3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.31.0.tgz#92d39dc336f2e3e312170420b00ffe9ca474925e"
+  integrity sha512-dblAdeKY3+GA1U+Q9eziZ0ooVlZMHsE8dqP0RkwvRtEsAULoKOYaCUOcJ4oW1DjWegdxk++UAt2SlQVnmeHv+g==
+
 "@tanstack/query-core@5.62.7":
   version "5.62.7"
   resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.62.7.tgz#c7f6d0131c08cd2f60e73ec6e7b70e2e9e335def"
@@ -892,6 +904,26 @@
   integrity sha512-+xCtP4UAFDTlRTYyEjLx0sRtWyr5GIk7TZjZwBu4YaNahi3Rt2oMyRqfpfVrtwsqY2sayP4iXVCwmC+ZqqFmuw==
   dependencies:
     "@tanstack/query-core" "5.62.7"
+
+"@turf/boolean-point-in-polygon@^6.0.1":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/boolean-point-in-polygon/-/boolean-point-in-polygon-6.5.0.tgz#6d2e9c89de4cd2e4365004c1e51490b7795a63cf"
+  integrity sha512-DtSuVFB26SI+hj0SjrvXowGTUCHlgevPAIsukssW6BG5MlNSBQAo70wpICBNJL6RjukXg8d2eXaAWuD/CqL00A==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/helpers@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/helpers/-/helpers-6.5.0.tgz#f79af094bd6b8ce7ed2bd3e089a8493ee6cae82e"
+  integrity sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw==
+
+"@turf/invariant@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/invariant/-/invariant-6.5.0.tgz#970afc988023e39c7ccab2341bd06979ddc7463f"
+  integrity sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
 
 "@types/event-source-polyfill@1.0.5":
   version "1.0.5"
@@ -1696,6 +1728,14 @@ domutils@^3.0.1, domutils@^3.1.0:
     domelementtype "^2.3.0"
     domhandler "^5.0.3"
 
+dotted-map@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/dotted-map/-/dotted-map-2.2.3.tgz#04bcdceed4aa3877564d88344e0726d47b85480b"
+  integrity sha512-8hyOOHHLLVCcCisM3yb9hqp+3bJ7TSMcr1SfrUw8Wxp5UMqih35jIvUyagweCooJbz/EH1nC9GGuPysh7+YlAg==
+  dependencies:
+    "@turf/boolean-point-in-polygon" "^6.0.1"
+    proj4 "^2.6.1"
+
 dunder-proto@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dunder-proto/-/dunder-proto-1.0.0.tgz#c2fce098b3c8f8899554905f4377b6d85dabaa80"
@@ -2189,15 +2229,6 @@ formik@^2.4.6:
     react-fast-compare "^2.0.1"
     tiny-warning "^1.0.2"
     tslib "^2.0.0"
-
-framer-motion@^11.11.8:
-  version "11.13.5"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.13.5.tgz#2cec307d2395ba6924a683abd79a517ec1f318f5"
-  integrity sha512-rArI0zPU9VkpS3Wt0J7dmRxAFUWtzPWoSofNQAP0UO276CmJ+Xlf5xN19GMw3w2QsdrS2sU+0+Q2vtuz4IEZaw==
-  dependencies:
-    motion-dom "^11.13.0"
-    motion-utils "^11.13.0"
-    tslib "^2.4.0"
 
 framer-motion@^12.4.10:
   version "12.4.10"
@@ -2954,6 +2985,11 @@ merge2@^1.3.0:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
+mgrs@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mgrs/-/mgrs-1.0.0.tgz#fb91588e78c90025672395cb40b25f7cd6ad1829"
+  integrity sha512-awNbTOqCxK1DBGjalK3xqWIstBZgN6fxsMSiXLs9/spqWkF2pAhb2rrYCFSsr1/tT7PhcDGjZndG8SWYn0byYA==
+
 micromatch@^4.0.4, micromatch@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.8.tgz#d66fa18f3a47076789320b9b1af32bd86d9fa202"
@@ -2998,11 +3034,6 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.1.2.tgz#93a9626ce5e5e66bd4db86849e7515e92340a707"
   integrity sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==
 
-motion-dom@^11.13.0:
-  version "11.13.0"
-  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-11.13.0.tgz#a8f86b3aedb55598a8e3dd4114f1c3347153baf2"
-  integrity sha512-Oc1MLGJQ6nrvXccXA89lXtOqFyBmvHtaDcTRGT66o8Czl7nuA8BeHAd9MQV1pQKX0d2RHFBFaw5g3k23hQJt0w==
-
 motion-dom@^12.4.10:
   version "12.4.10"
   resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.4.10.tgz#025886748e33e8ee77742eea7bd088b202e7c83a"
@@ -3010,15 +3041,18 @@ motion-dom@^12.4.10:
   dependencies:
     motion-utils "^12.4.10"
 
-motion-utils@^11.13.0:
-  version "11.13.0"
-  resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-11.13.0.tgz#e65fab5e26a1da3b18b4b4d1f3d0067977ccfd4a"
-  integrity sha512-lq6TzXkH5c/ysJQBxgLXgM01qwBH1b4goTPh57VvZWJbVJZF/0SB31UWEn4EIqbVPf3au88n2rvK17SpDTja1A==
-
 motion-utils@^12.4.10:
   version "12.4.10"
   resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.4.10.tgz#3d93acea5454419eaaad8d5e5425cb71cbfa1e7f"
   integrity sha512-NPwZd94V013SwRf++jMrk2+HEBgPkeIE2RiOzhAuuQlqxMJPkKt/LXVh6Upl+iN8oarSGD2dlY5/bqgsYXDABA==
+
+motion@^12.4.10:
+  version "12.4.10"
+  resolved "https://registry.yarnpkg.com/motion/-/motion-12.4.10.tgz#d00c2b2c777032d1ac0d91ba2a7dd5bc602f6f54"
+  integrity sha512-AM21Lyfn7ZHO+nBuHJEA2REFgS3kUM83CLZnzM0ZY1/sVeKGkCtV4LF4O/YsQXyZ9mrUrrnTaUkKquS4eaIYjg==
+  dependencies:
+    framer-motion "^12.4.10"
+    tslib "^2.4.0"
 
 ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
@@ -3402,6 +3436,14 @@ progress-stream@^2.0.0:
   dependencies:
     speedometer "~1.0.0"
     through2 "~2.0.3"
+
+proj4@^2.6.1:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/proj4/-/proj4-2.15.0.tgz#d77c9956861c8ed516071c4208d576cebe800eb5"
+  integrity sha512-LqCNEcPdI03BrCHxPLj29vsd5afsm+0sV1H/O3nTDKrv8/LA01ea1z4QADDMjUqxSXWnrmmQDjqFm1J/uZ5RLw==
+  dependencies:
+    mgrs "1.0.0"
+    wkt-parser "^1.4.0"
 
 prop-types@^15.8.1:
   version "15.8.1"
@@ -4434,6 +4476,11 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+wkt-parser@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/wkt-parser/-/wkt-parser-1.4.0.tgz#7cca07a6ee5b4baf059b723e62d7fe95bc923bf5"
+  integrity sha512-qpwO7Ihds/YYDTi1aADFTI1Sm9YC/tTe3SHD24EeIlZxy7Ik6a1b4HOz7jAi0xdUAw487duqpo8OGu+Tf4nwlQ==
 
 word-wrap@^1.2.5:
   version "1.2.5"

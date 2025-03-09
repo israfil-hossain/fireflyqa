@@ -8,6 +8,7 @@ import OurClients from "@/components/home/OurClients";
 import { OurService } from "@/components/home/OurService";
 import ProjectsShowcase from "@/components/home/ProjectShowcase";
 import Head from "next/head";
+import { Newsletter } from "@/components/common/Newsletter";
 
 export default function Home() {
   return (
@@ -51,8 +52,10 @@ export default function Home() {
         <OurClients />
         <ProjectsShowcase />
         <FeaturesSection />
-        <FrequentlyQuestion />
         <ContactSection />
+        <FrequentlyQuestion />
+        <Newsletter />
+        
       </div>
     </>
   );
