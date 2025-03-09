@@ -59,7 +59,7 @@ export default function ContactForm() {
 
   return (
     <ContainerBox className="lg:flex md:flex md:justify-between justify-center bg-tintblue w-full lg:justify-between  py-10 px-4 my-12">
-      <div className="relative lg:w-1/2 md:w-1/2 w-full shadow-lg">
+      <div className="relative lg:w-1/2 md:w-1/2 w-full shadow-lg rounded-l-xl">
         <div className="absolute inset-0 z-0 opacity-60">
           <Image
             width={500}
@@ -83,7 +83,7 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+      <div className="bg-white p-8 rounded-none lg:rounded-r-xl shadow-xl max-w-3xl w-full">
         <h2 className="text-3xl font-bold text-center mb-4">We are Happy To Help!</h2>
         <Formik
           initialValues={initialValues}

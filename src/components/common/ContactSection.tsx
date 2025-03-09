@@ -76,14 +76,14 @@ export default function ContactSection() {
               {"Building stellar websites for early startups"}
             </h3>
             <p className="mb-4 text-white text-center font-normal ">
-              {"LOrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim."}
+              {"Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions"}
             </p>
           </div>
         </div>
         <div className="pt-10  pb-8 px-10 lg:w-1/2 md:w-1/2 w-full flex flex-col justify-center ">
           <h2 className="text-2xl  font-semibold text-grey text-start">Send inquiry</h2>
           <p className="text-[15px] text-gray-300 font-normal text-start">
-            Lorem ipsum Lorem ipsum Lorem ipsum
+            We are Happy To Help!
           </p>
           <Formik
             initialValues={initialValues}

@@ -67,8 +67,7 @@ export function Newsletter() {
 
         {/* Glass Effect Form */}
         <div className="relative z-10 mt-8 p-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg">
-          <form
-            onSubmit={handleSubscribe}
+          <div
             className="flex flex-col sm:flex-row items-center gap-3"
           >
             <input
@@ -80,13 +79,13 @@ export function Newsletter() {
               required
             />
             <button
-              type="submit"
+              onClick={handleSubscribe}
               disabled={isPending}
               className="px-6 py-3 bg-tintblue text-white font-medium rounded-md hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isPending ? "Subscribing..." : "Subscribe"}
             </button>
-          </form>
+          </div>
           {emailError && (
             <p className="text-red-500 text-sm mt-2">{emailError}</p>
           )}
