@@ -199,28 +199,28 @@ export default function Footer() {
           >
             <ul className="flex justify-center space-x-8">
               <li>
-                <a href="/" className="hover:text-white">
+                <a href="/" className="hover:text-primary">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about-us" className="hover:text-white">
+                <a href="/about-us" className="hover:text-primary">
                   About us
                 </a>
               </li>
               <li>
-                <a href="/feature" className="hover:text-white">
+                <a href="/feature" className="hover:text-primary">
                   Features
                 </a>
               </li>
 
               <li>
-                <a href="/faq" className="hover:text-white">
+                <a href="/faq" className="hover:text-primary">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="/blog" className="hover:text-white">
+                <a href="/blog" className="hover:text-primary">
                   Blog
                 </a>
               </li>

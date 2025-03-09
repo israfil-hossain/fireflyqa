@@ -9,6 +9,7 @@ import { OurService } from "@/components/home/OurService";
 import ProjectsShowcase from "@/components/home/ProjectShowcase";
 import Head from "next/head";
 import { Newsletter } from "@/components/common/Newsletter";
+import { WorldMapDemo } from "@/components/common/WorldMap";
 
 export default function Home() {
   return (
@@ -55,6 +56,8 @@ export default function Home() {
         <ContactSection />
         <FrequentlyQuestion />
         <Newsletter />
+
+        <WorldMapDemo />
         
       </div>
     </>
