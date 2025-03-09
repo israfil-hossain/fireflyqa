@@ -6,8 +6,10 @@ import { tabVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { templates } from "./template";
 import ProjectCard from "./ProjectCard";
+import { Products } from "./ProductCard";
 
-export const Projects = () => {
+export const Projects = ({product}:{product:any}) => {
+  console.log("product ; ", product);
   return (
     <div>
       <Banner
@@ -40,7 +42,7 @@ export const Projects = () => {
         }
       />
       <div className="text-center items-center flex flex-col justify-center w-full py-10">
-        <Tabs
+        {/* <Tabs
           defaultValue="all"
           className="w-full flex flex-col justify-center items-center"
         >
@@ -72,7 +74,7 @@ export const Projects = () => {
           </TabsList>
           <div className="h-[1px] bg-gray-200 w-[60%] items-center mb-4" />
 
-          {/* Backend tab content */}
+          Backend tab content
           <TabsContent value="all">
             <motion.div
               className="flex mt-2 gap-5 justify-center items-center  flex-wrap"
@@ -85,17 +87,11 @@ export const Projects = () => {
                   <ProjectCard key={index} template={template} />
                 ))}
               </div>
-              {/* {techStackData.backend.map((tech) => (
-                <motion.div key={tech.name} variants={iconVariants} 
-                className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
-                justify-center items-center overflow-hidden rounded-full ">
-                  <Image src={tech.logo} alt={tech.name} width={100} height={100} className="object-contain" />
-                </motion.div>
-              ))} */}
+
             </motion.div>
           </TabsContent>
 
-          {/* Frontend tab content */}
+          Frontend tab content
           <TabsContent value="web">
             <motion.div
               className="flex mt-6 gap-5 justify-center items-center  flex-wrap"
@@ -103,17 +99,17 @@ export const Projects = () => {
               animate="visible"
               variants={tabVariants}
             >
-              {/* {techStackData.frontend.map((tech) => (
+              {techStackData.frontend.map((tech) => (
                 <motion.div key={tech.name} variants={iconVariants} 
                 className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
                 justify-center items-center overflow-hidden rounded-full ">
                   <Image src={tech.logo} alt={tech.name} width={100} height={100} className="object-contain" />
                 </motion.div>
-              ))} */}
+              ))}
             </motion.div>
           </TabsContent>
 
-          {/* Databases tab content */}
+          Databases tab content
           <TabsContent value="mobile">
             <motion.div
               className="flex justify-center mt-6 space-x-4"
@@ -121,17 +117,17 @@ export const Projects = () => {
               animate="visible"
               variants={tabVariants}
             >
-              {/* {techStackData.databases.map((tech) => (
+              {techStackData.databases.map((tech) => (
                 <motion.div key={tech.name} variants={iconVariants} 
                 className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
                 justify-center items-center overflow-hidden rounded-full ">
                   <Image src={tech.logo} alt={tech.name} width={100} height={100} />
                 </motion.div>
-              ))} */}
+              ))}
             </motion.div>
           </TabsContent>
 
-          {/* CMS tab content */}
+          CMS tab content
           <TabsContent value="nocode">
             <motion.div
               className="flex justify-center mt-6 space-x-4"
@@ -139,16 +135,17 @@ export const Projects = () => {
               animate="visible"
               variants={tabVariants}
             >
-              {/* {techStackData.nocode.map((tech) => (
+              {techStackData.nocode.map((tech) => (
                 <motion.div key={tech.name} variants={iconVariants} 
                 className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
                 justify-center items-center overflow-hidden rounded-full ">
                   <Image src={tech.logo} alt={tech.name} width={100} height={100} />
                 </motion.div>
-              ))} */}
+              ))}
             </motion.div>
           </TabsContent>
-        </Tabs>
+        </Tabs> */}
+         <Products products={product }/>
       </div>
     </div>
   );

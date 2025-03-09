@@ -16,7 +16,7 @@ export default function ProjectsShowcase() {
             View our projects
           </h2>
           <a
-            href="#"
+            href="/projects"
             className="text-blue-600 hover:text-blue-800 flex items-center"
           >
             View More <span className="ml-2">→</span>

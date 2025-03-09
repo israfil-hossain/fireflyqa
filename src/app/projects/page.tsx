@@ -1,6 +1,20 @@
 import { Projects } from '@/components/projects/Projects'
 import React from 'react'
 
-export default function Page() {
-  return <Projects />
+import { Metadata } from "next";
+import { getProjects } from '@/lib/query';
+
+export const metadata: Metadata = {
+  title: "Projects | Flowentech",
+  description:
+    "Leading software development agency offering custom web, mobile, and cloud solutions. We provide cutting-edge digital transformation services to boost your business.",
+};
+
+export default async function Page() {
+  const product = await getProjects();
+  
+  if (!product) {
+    return "No data available";
+  }
+  return <Projects product={product}/>
 }
