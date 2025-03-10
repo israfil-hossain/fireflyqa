@@ -1,5 +1,4 @@
 "use client";
-import { gridbanner } from "@/assets";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import React from "react";
@@ -21,8 +20,6 @@ export const BackgroundLines = ({
         "h-full  bg-white bg-white/10 backdrop-blur-2xl border border-blue-600/20 rounded-4xl shadow-xl mx-8",
         className
       )}
-      
-      style={{ backgroundImage: `url(${gridbanner})` }}
     >
       <SVG svgOptions={svgOptions} />
       {children}

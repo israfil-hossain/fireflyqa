@@ -17,11 +17,8 @@ export const HeroSection = () => {
       <div className="magicpattern"/>
       <ContainerBox className="h-[65vh]">
       <div className="flex flex-col lg:flex-row items-start justify-between ">
-        <motion.div
+        <div
           className="lg:w-1/2 mb-12 lg:mb-0"
-          initial="initial"
-          animate="animate"
-          variants={staggerChildren}
         >
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
@@ -41,13 +38,10 @@ export const HeroSection = () => {
               <ArrowRight size={20} />
             </button>
           </motion.div>
-        </motion.div>
+        </div>
        
-        <motion.div
+        <div
           className="lg:w-1/2 w-96"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
         >
           <div className="relative h-96">
            <Image src={hero} alt="hero" width={500} height={500} className="absolute z-10 top-0"/>
@@ -67,7 +61,7 @@ export const HeroSection = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </ContainerBox>
     </div>

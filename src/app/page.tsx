@@ -5,11 +5,13 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { HowToWork } from "@/components/home/HowToWork";
 import LeadingSection from "@/components/home/LeadingSection";
 import OurClients from "@/components/home/OurClients";
-import { OurService } from "@/components/home/OurService";
+import OurService  from "@/components/home/OurService";
 import ProjectsShowcase from "@/components/home/ProjectShowcase";
 import Head from "next/head";
 import { Newsletter } from "@/components/common/Newsletter";
 import { WorldMapDemo } from "@/components/common/WorldMap";
+import Marque from "@/components/features/Marque";
+import TrustPilotReview from "@/components/common/TrustpilotReview";
 
 export default function Home() {
   return (
@@ -47,6 +49,7 @@ export default function Home() {
       </Head>
       <div className="min-h-screen ">
         <HeroSection />
+        <Marque />
         <OurService />
         <LeadingSection />
         <HowToWork />
@@ -56,7 +59,6 @@ export default function Home() {
         <ContactSection />
         <FrequentlyQuestion />
         <Newsletter />
-
         <WorldMapDemo />
         
       </div>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Copy, Facebook, Instagram, Linkedin } from "lucide-react";
 import "./footer.css";
 import ContainerBox from "../layout/ContainerBox";
-import { logo } from "@/assets";
+import { logo, review } from "@/assets";
 import Image from "next/image";
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
@@ -205,7 +205,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/about-us" className="hover:text-primary">
-                  About us
+                  About-us
                 </a>
               </li>
               <li>
