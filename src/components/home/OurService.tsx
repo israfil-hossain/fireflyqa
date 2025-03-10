@@ -3,8 +3,6 @@ import React from "react";
 import { ServiceData } from "@/constants/serviceData";
 import Image from "next/image";
 import ContainerBox from "../layout/ContainerBox";
-import { banner } from "@/assets";
-
 
 
 export default function OurService() {
@@ -19,7 +17,9 @@ export default function OurService() {
       <ContainerBox >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {ServiceData?.map((feature: any, index: number) => (
-            <div className=" bg-gradient-to-br from-white to-neutral-100 hover:bg-gradient-to-br hover:from-blue-50 hover:to-green-50 shadow-lg hover:shadow-xl rounded-lg p-4 cursor-pointer border border-gray-200 h-52 min-w-[350px]">
+            <div className=" bg-gradient-to-br from-white to-neutral-100 hover:bg-gradient-to-br hover:from-blue-50 hover:to-green-50 shadow-lg hover:shadow-xl rounded-lg p-4 cursor-pointer border border-gray-200 h-52 min-w-[350px]"
+              key={index}
+            >
               <div className="mb-3  flex flex-col items-center space-x-2">
                 <Image
                   src={feature.icon}

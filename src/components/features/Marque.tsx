@@ -1,5 +1,6 @@
 'use client'; 
 import { Brand } from "@/constants/assets";
+import Image from "next/image";
 import React from "react";
 
 const Marque = () => {
@@ -12,7 +13,9 @@ const Marque = () => {
         <div className="relative flex w-full overflow-hidden mt-2">
           <div className="flex space-x-12 animate-marquee">
             {Brand.concat(Brand).map((item, index) => (
-              <img
+              <Image
+                width={100} 
+                height={100}
                 key={index}
                 src={item.url}
                 alt={item.name}

@@ -1,4 +1,5 @@
 // components/DynamicCard.js
+import Image from "next/image";
 import React from "react";
 
 const ProjectCard = ({ template }: { template: any }) => {
@@ -11,7 +12,9 @@ const ProjectCard = ({ template }: { template: any }) => {
         }}
       >
         <div className="w-full">
-          <img
+          <Image
+            width={500} 
+            height={300}
             src={template.image}
             alt={template.title}
             className="rounded-lg object-cover w-full"

@@ -11,7 +11,6 @@ import Head from "next/head";
 import { Newsletter } from "@/components/common/Newsletter";
 import { WorldMapDemo } from "@/components/common/WorldMap";
 import Marque from "@/components/features/Marque";
-import TrustPilotReview from "@/components/common/TrustpilotReview";
 
 export default function Home() {
   return (
