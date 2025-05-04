@@ -59,14 +59,16 @@ export default async function Page() {
           </div>
         }
       />
-    <main className="max-w-7xl w-full px-3 xl:p-0 mx-auto">
+    <main className="max-w-7xl w-full px-3 xl:p-0 mx-auto ">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
         <HydrationBoundary state={dehydrate(queryClient)}>
           <Blog />
         </HydrationBoundary>
       </div>
     </main>
-    <Newsletter />
+    <div className="mb-24">
+      <Newsletter />
+    </div>
     </div>
   );
 }

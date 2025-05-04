@@ -11,10 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-  const product = await getProjects();
-  
-  if (!product) {
-    return "No data available";
-  }
-  return <Projects product={product}/>
+
+  return <Projects />
 }

@@ -1,5 +1,5 @@
 import ContainerBox from "@/components/layout/ContainerBox";
-import { SingleProduct } from "@/components/projects/single-project/Product";
+import { SingleProduct } from "@/components/projects/single-project/SingleProject";
 
 import { getSingleProject } from "@/lib/query";
 import { ArrowLeftIcon } from "lucide-react";
@@ -26,7 +26,7 @@ export default async function SingleProjectPage({ params }: { params: any }) {
       >
         <ArrowLeftIcon className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 d" />
       </Link>
-      <SingleProduct project={product} />
+      <SingleProduct slug={params?.slug} />
     </ContainerBox>
   );
 }

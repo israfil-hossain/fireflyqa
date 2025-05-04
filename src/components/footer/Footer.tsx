@@ -197,7 +197,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <ul className="flex justify-center space-x-8">
+            <ul className="flex justify-center space-x-4 lg:text-[16px] text-[14px]">
               <li>
                 <a href="/" className="hover:text-primary">
                   Home

@@ -49,7 +49,7 @@ export default function Post({ slug }: Props) {
         {"flowentech"}
       </div>
       <div
-        className="blog-content text-xl leading-loose flex flex-col gap-5 mt-5 lg:px-16"
+        className="blog-content text-xl leading-loose flex flex-col gap-5 mt-5 lg:px-16 "
         dangerouslySetInnerHTML={{ __html: data!.content.html }}
       ></div>
     </div>
