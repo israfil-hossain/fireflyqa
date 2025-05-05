@@ -1,16 +1,6 @@
-import ContactSection from "@/components/common/ContactSection";
-import FeaturesSection from "@/components/home/FeatureSection";
-import { FrequentlyQuestion } from "@/components/common/FrequentlyQuestion";
-import { HeroSection } from "@/components/home/HeroSection";
-import { HowToWork } from "@/components/home/HowToWork";
-import LeadingSection from "@/components/home/LeadingSection";
-import OurClients from "@/components/home/OurClients";
-import OurService  from "@/components/home/OurService";
-import ProjectsShowcase from "@/components/home/ProjectShowcase";
+
+import HomeComponent from "@/components/home";
 import Head from "next/head";
-import { Newsletter } from "@/components/common/Newsletter";
-import { WorldMapDemo } from "@/components/common/WorldMap";
-import Marque from "@/components/features/Marque";
 
 export default function Home() {
   return (
@@ -47,19 +37,7 @@ export default function Home() {
         <meta property="og:flowentech" content="Flowentech" />
       </Head>
       <div className="min-h-screen ">
-        <HeroSection />
-        <Marque />
-        <OurService />
-        <LeadingSection />
-        <HowToWork />
-        <OurClients />
-        <ProjectsShowcase />
-        <FeaturesSection />
-        <ContactSection />
-        <FrequentlyQuestion />
-        <Newsletter />
-        <WorldMapDemo />
-        
+        <HomeComponent />
       </div>
     </>
   );
