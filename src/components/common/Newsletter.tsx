@@ -55,7 +55,7 @@ export function Newsletter() {
   }
 
   return (
-    <div className="relative z-10 h-[50vh] lg:h-[60vh] flex items-center justify-center bg-center  my-10 mb-10">
+    <div className="relative z-10 h-[80vh] lg:h-[80vh] flex items-center justify-center bg-center  py-20">
       <BackgroundLines className="bg-white/10 backdrop-blur-4xl border border-primary/20 rounded-2xl shadow-2xl relative z-10 flex flex-col items-center w-full">
         <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-10 md:py-10 font-bold tracking-tight">
           Stay Updated with <br /> <ColourfulText text="FlowenTech" />
@@ -66,16 +66,16 @@ export function Newsletter() {
         </p>
 
         {/* Glass Effect Form */}
-        <div className="relative z-10 mt-8 p-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg">
+        <div className="absolute mb-16 bottom-0 z-10 p-5 lg:p-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg">
           <div
-            className="flex flex-col sm:flex-row items-center gap-3"
+            className="flex flex-col sm:flex-row items-center gap-3 "
           >
             <input
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="px-4 py-3 w-72 md:w-96 border border-gray-300 rounded-md bg-white/80 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="px-4 py-3 w-60  md:w-96 border border-gray-300 rounded-md bg-white/80 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
             <button

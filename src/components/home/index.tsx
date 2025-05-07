@@ -11,6 +11,7 @@ import FeaturesSection from "./FeatureSection";
 import ContactSection from "../common/ContactSection";
 import { FrequentlyQuestion } from "../common/FrequentlyQuestion";
 import { Newsletter } from "../common/Newsletter";
+import TimelineWorks from "../aboutus/TimelineWorks";
 
 const Marque = dynamic(() => import("@/components/features/Marque"), {
   ssr: false,
@@ -25,6 +26,7 @@ export default function HomeComponent() {
       <LeadingSection />
       <HowToWork />
       <OurClients />
+      <TimelineWorks />
       <ProjectsShowcase />
       <FeaturesSection />
       <ContactSection />
