@@ -1,12 +1,22 @@
 "use client";
 
-// components/ProjectsShowcase.tsx
 import { motion } from "framer-motion";
 import ContainerBox from "../layout/ContainerBox";
 import { projects } from "@/constants/projectData";
 import Image from "next/image";
+import { useProjectData } from "@/service/project-data";
+import Loader from "../ui/loader";
+import Truncate from "../ui/truncate";
 
 export default function ProjectsShowcase() {
+  const { data: productData, isLoading, error, refetch } = useProjectData();
+
+  console.log("projects : ===>", productData);
+
+  if(isLoading){
+    return <Loader/>
+  }
+ 
   return (
     <section className="bg-white py-12">
       <ContainerBox className="container mx-auto px-4">
@@ -35,15 +45,24 @@ export default function ProjectsShowcase() {
                 <Image
                   width={500}
                   height={500}
-                  src={projects[0].image}
+                  src={productData[0]?.thumbnail?.asset?.url}
                   alt={"showcase"}
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
               <div className="relative rounded-l-lg z-10 w-1/2 pb-10 bg-gradient-to-t from-[#1C1E53] to-[#1c1e5388] h-full flex flex-col justify-end items-center">
-                <h3 className="text-2xl text-center font-semibold text-white mb-4">{projects[0].title}</h3>
-                <p className="mb-4 text-center font-normal text-grey">{projects[0].description}</p>
-                <a href={projects[0].link} className="underline text-yellow-300 text-center">
+                <h3 className="text-3xl text-center font-semibold text-white mb-4">
+                  {productData[0]?.title}
+                </h3>
+                <Truncate
+                  text={productData[0]?.description}
+                  className="text-white px-2 text-center"
+                  limit={80}
+                />
+                <a
+                  href={`projects/${productData[0]?.slug?.current}`}
+                  className="underline text-yellow-300 text-center"
+                >
                   View project
                 </a>
               </div>
@@ -51,11 +70,10 @@ export default function ProjectsShowcase() {
           </motion.div>
 
           <div className="grid grid-rows-2 gap-5 lg:h-[440px]">
-            {/* Smaller project cards */}
-            {projects.slice(1).map((project) => (
+            {productData?.slice(1, 3).map((project: any) => (
               <motion.div
-                key={project.id}
-                className="relative "
+                key={project?.id}
+                className="relative"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
@@ -64,15 +82,24 @@ export default function ProjectsShowcase() {
                     <Image
                       width={500}
                       height={200}
-                      src={project.image}
+                      src={project?.thumbnail?.asset?.url}
                       alt={"showcase"}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="relative h-[220px] w-1/2 pb-8 z-10 bg-gradient-to-b from-[#1C1E53] to-[#1c1e53ab] flex flex-col justify-end  ">
-                    <h3 className="text-xl font-bold text-white text-center mb-4">{project.title}</h3>
-                    <p className="mb-4 text-white text-center font-normal ">{project.description}</p>
-                    <a href={project.link} className="text-yellow-300 underline text-center">
+                    <h3 className="text-xl font-bold text-white text-center mb-4">
+                      {project?.title}
+                    </h3>
+                    <Truncate
+                      text={project?.description}
+                      limit = {45}
+                      className="text-white px-2 text-center"
+                    />
+                    <a
+                      href={`projects/${project?.slug?.current}`}
+                      className="text-yellow-300 underline text-center"
+                    >
                       View project
                     </a>
                   </div>

@@ -19,14 +19,14 @@ export default function Truncate({ text, limit = 100, className = '' }: Truncate
   return (
     <p className={className}>
       {displayText}
-      {isTruncated && (
+      {/* {isTruncated && (
         <span
           onClick={() => setExpanded(!expanded)}
           className="text-blue-500 cursor-pointer ml-2"
         >
-          {expanded ? 'Read less' : 'Read more'}
+          {expanded ? 'Read less' : ''}
         </span>
-      )}
+      )} */}
     </p>
   );
 }
