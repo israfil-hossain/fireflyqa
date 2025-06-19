@@ -26,8 +26,13 @@ export default function OurClients() {
       <ContainerBox className="flex space-x-5 lg:flex-row flex-col justify-center items-center">
         {/* Left Content */}
         <div className="w-full">
-          <h2 className="text-2xl font-bold text-tintblue">What our clients say about us</h2>
-          <p className="text-gray-600 mt-2">
+           <h1 className="max-w-2xl mx-auto text-center font-medium text-4xl md:text-5xl lg:text-5xl">
+          <span className="font-title">What Our Clients</span> <br />
+          <span className="font-uncut font-medium tracking-tighter">
+            Say about us!
+          </span>
+        </h1>
+          <p className="text-gray-600 mt-2 font-uncut">
           At Flowentech, we take pride in delivering top-notch digital solutions that drive success. Our clients trust us for our expertise, innovation, and commitment to excellence. But don’t just take our word for it—here’s what they have to say:
           </p>
         </div>

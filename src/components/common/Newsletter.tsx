@@ -57,7 +57,7 @@ export function Newsletter() {
   return (
     <div className="relative z-10 h-[80vh] lg:h-[80vh] flex items-center justify-center bg-center  py-20">
       <BackgroundLines className="bg-white/10 backdrop-blur-4xl border border-primary/20 rounded-2xl shadow-2xl relative z-10 flex flex-col items-center w-full">
-        <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-10 md:py-10 font-bold tracking-tight">
+        <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-10 md:py-10 font-title font-bold tracking-tight">
           Stay Updated with <br /> <ColourfulText text="FlowenTech" />
         </h2>
         <p className="max-w-xl mx-2 text-wrap text-sm md:text-lg text-neutral-400 dark:text-neutral-400 text-center">

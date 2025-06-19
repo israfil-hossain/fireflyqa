@@ -15,11 +15,11 @@ export default function LeadingSection() {
       <ContainerBox className="flex lg:flex-row flex-col  lg:justify-between w-full lg:space-x-5 space-y-5">
         <div className="text-start mb-12 items-start flex flex-col justify-start lg:w-1/2 w-full">
           <div className="bg-tintblue h-2 w-20  rounded-md mb-4"></div>
-          <h3 className="text-3xl text-start font-semibold text-tintblue ">
-           Leading companies trust us <br/> <span className="text-primary font-bold text-3xl">to develop software</span>
-          </h3>
+          <h1 className="text-3xl lg:text-4xl  text-start text-tintblue font-title">
+           Leading companies trust us <br/> <span className="text-primary font-medium text-4xl font-uncut">to develop software</span>
+          </h1>
 
-          <p className="font-normal text-lg pt-5">We <span className="text-primary">add development capacity</span> {`to tech teams. Our value isn't limited to building teams but is equally distributed 
+          <p className="font-uncut text-lg pt-5">We <span className="text-primary">add development capacity</span> {`to tech teams. Our value isn't limited to building teams but is equally distributed 
           accross the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.`}</p>
           
           <Link href="/about-us" className="text-primary text-[18px] font-normal text-center flex space-x-1 items-center pt-8"><p>See more Informations</p> <ArrowRight size={18} /></Link>

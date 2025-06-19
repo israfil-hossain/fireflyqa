@@ -1,4 +1,4 @@
-'use client'; 
+"use client";
 
 import React from "react";
 
@@ -8,12 +8,14 @@ import Image from "next/image";
 import ContainerBox from "../layout/ContainerBox";
 import { techStackData } from "@/constants/ourTechData";
 
-
-
 const OurtechStack = () => {
   const tabVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.2 } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, staggerChildren: 0.2 },
+    },
   };
 
   const iconVariants = {
@@ -24,21 +26,53 @@ const OurtechStack = () => {
   return (
     <ContainerBox className="py-10 ">
       <div className="text-center mb-12 items-center flex flex-col justify-center">
-          <h2 className="text-gray-600">/tech</h2>
-          <h3 className="text-3xl font-semibold  max-w-lg x">
-            Our <span className="font-bold text-tintblue">Tech Stack</span>
-          </h3>
-        </div>
+        <h2 className="text-gray-600 font-title">/tech</h2>
+
+        <h1 className="max-w-2xl mx-auto text-center font-medium text-4xl md:text-5xl lg:text-6xl">
+          <span className="font-title">We Serve All</span> <br />
+          <span className="font-uncut font-medium tracking-tighter">
+            Tech Stacks
+          </span>
+        </h1>
+      </div>
       <div className="text-center items-center flex flex-col justify-center  w-full">
-        <Tabs defaultValue="backend" className="w-full flex flex-col justify-center items-center">
+        <Tabs
+          defaultValue="backend"
+          className="w-full flex flex-col justify-center items-center"
+        >
           <TabsList className="flex justify-center space-x-4 mb-6">
-            <TabsTrigger value="backend" className="font-medium lg:text-[18px] text-[16px]">Backend</TabsTrigger>
-            <TabsTrigger value="frontend" className="font-medium lg:text-[18px] text-[16px]">Frontend</TabsTrigger>
-            <TabsTrigger value="databases" className="font-medium lg:text-[18px] text-[16px]">Databases</TabsTrigger>
-            <TabsTrigger value="cms" className="font-medium lg:text-[18px] text-[16px]">NoCode</TabsTrigger>
-            <TabsTrigger value="devops" className="font-medium lg:text-[18px] text-[16px]">DevOps</TabsTrigger>
+            <TabsTrigger
+              value="backend"
+              className="font-medium lg:text-[18px] text-[16px]"
+            >
+              Backend
+            </TabsTrigger>
+            <TabsTrigger
+              value="frontend"
+              className="font-medium lg:text-[18px] text-[16px]"
+            >
+              Frontend
+            </TabsTrigger>
+            <TabsTrigger
+              value="databases"
+              className="font-medium lg:text-[18px] text-[16px]"
+            >
+              Databases
+            </TabsTrigger>
+            <TabsTrigger
+              value="cms"
+              className="font-medium lg:text-[18px] text-[16px]"
+            >
+              NoCode
+            </TabsTrigger>
+            <TabsTrigger
+              value="devops"
+              className="font-medium lg:text-[18px] text-[16px]"
+            >
+              DevOps
+            </TabsTrigger>
           </TabsList>
-          <div className="h-[1px] bg-gray-200 w-[60%] items-center mb-4"/>
+          <div className="h-[1px] bg-gray-200 w-[60%] items-center mb-4" />
 
           {/* Backend tab content */}
           <TabsContent value="backend">
@@ -49,10 +83,19 @@ const OurtechStack = () => {
               variants={tabVariants}
             >
               {techStackData.backend.map((tech) => (
-                <motion.div key={tech.name} variants={iconVariants} 
-                className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
-                justify-center items-center overflow-hidden rounded-full ">
-                  <Image src={tech.logo} alt={tech.name} width={100} height={100} className="object-contain" />
+                <motion.div
+                  key={tech.name}
+                  variants={iconVariants}
+                  className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
+                justify-center items-center overflow-hidden rounded-full "
+                >
+                  <Image
+                    src={tech.logo}
+                    alt={tech.name}
+                    width={100}
+                    height={100}
+                    className="object-contain"
+                  />
                   {/* <p>{tech.name}</p> */}
                 </motion.div>
               ))}
@@ -68,10 +111,19 @@ const OurtechStack = () => {
               variants={tabVariants}
             >
               {techStackData.frontend.map((tech) => (
-                <motion.div key={tech.name} variants={iconVariants} 
-                className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
-                justify-center items-center overflow-hidden rounded-full ">
-                  <Image src={tech.logo} alt={tech.name} width={100} height={100} className="object-contain" />
+                <motion.div
+                  key={tech.name}
+                  variants={iconVariants}
+                  className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
+                justify-center items-center overflow-hidden rounded-full "
+                >
+                  <Image
+                    src={tech.logo}
+                    alt={tech.name}
+                    width={100}
+                    height={100}
+                    className="object-contain"
+                  />
                   {/* <p>{tech.name}</p> */}
                 </motion.div>
               ))}
@@ -87,10 +139,18 @@ const OurtechStack = () => {
               variants={tabVariants}
             >
               {techStackData.databases.map((tech) => (
-                <motion.div key={tech.name} variants={iconVariants} 
-                className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
-                justify-center items-center overflow-hidden rounded-full ">
-                  <Image src={tech.logo} alt={tech.name} width={100} height={100} />
+                <motion.div
+                  key={tech.name}
+                  variants={iconVariants}
+                  className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
+                justify-center items-center overflow-hidden rounded-full "
+                >
+                  <Image
+                    src={tech.logo}
+                    alt={tech.name}
+                    width={100}
+                    height={100}
+                  />
                   {/* <p>{tech.name}</p> */}
                 </motion.div>
               ))}
@@ -106,17 +166,24 @@ const OurtechStack = () => {
               variants={tabVariants}
             >
               {techStackData.nocode.map((tech) => (
-                <motion.div key={tech.name} variants={iconVariants} 
-                className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
-                justify-center items-center overflow-hidden rounded-full ">
-                  <Image src={tech.logo} alt={tech.name} width={100} height={100} />
+                <motion.div
+                  key={tech.name}
+                  variants={iconVariants}
+                  className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
+                justify-center items-center overflow-hidden rounded-full "
+                >
+                  <Image
+                    src={tech.logo}
+                    alt={tech.name}
+                    width={100}
+                    height={100}
+                  />
                   {/* <p>{tech.name}</p> */}
                 </motion.div>
               ))}
             </motion.div>
           </TabsContent>
 
-         
           {/* DevOps tab content */}
           <TabsContent value="devops">
             <motion.div
@@ -126,10 +193,18 @@ const OurtechStack = () => {
               variants={tabVariants}
             >
               {techStackData.devops.map((tech) => (
-                <motion.div key={tech.name} variants={iconVariants}
-                className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
-                justify-center items-center overflow-hidden rounded-full ">
-                  <Image src={tech.logo} alt={tech.name} width={100} height={100} />
+                <motion.div
+                  key={tech.name}
+                  variants={iconVariants}
+                  className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]  p-2  border flex hover:border-darkblue/40 hover:cursor-pointer hover:shadow-2xl bg-grey 
+                justify-center items-center overflow-hidden rounded-full "
+                >
+                  <Image
+                    src={tech.logo}
+                    alt={tech.name}
+                    width={100}
+                    height={100}
+                  />
                   {/* <p>{tech.name}</p> */}
                 </motion.div>
               ))}

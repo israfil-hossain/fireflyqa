@@ -54,7 +54,7 @@ export const Products = () => {
                 <div>
                   <Heading
                     as="h4"
-                    className="font-black text-lg md:text-lg lg:text-lg "
+                    className="text-3xl md:text-lg lg:text-3xl  font-uncut "
                   >
                     {product?.title}
                   </Heading>

@@ -60,6 +60,9 @@ export default function ContactSection() {
   };
   return (
     <div className="mb-10 mt-10">
+       <h1 className="max-w-2xl mx-auto text-center font-medium text-4xl md:text-5xl lg:text-6xl py-5">
+        <span className="font-title">Contact Us</span> <br />
+      </h1>
       <ContainerBox className="lg:flex md:flex md:justify-between justify-center bg-tintblue w-full lg:justify-between  px-0">
         <div className="relative lg:w-1/2 md:w-1/2 w-full shadow-lg">
           <div className="absolute inset-0 z-0 opacity-60">
@@ -72,10 +75,10 @@ export default function ContactSection() {
             />
           </div>
           <div className="relative h-full w-full p-8 z-10 bg-gradient-to-b from-[#1c1e53a5] to-[#1c1e535b] flex flex-col justify-center  ">
-            <h3 className="text-5xl font-medium text-grey text-center mb-4">
+            <h1 className="text-5xl font-medium italic text-grey text-center mb-4 font-uncut">
               {"Building stellar websites for early startups"}
-            </h3>
-            <p className="mb-4 text-white text-center font-normal ">
+            </h1>
+            <p className="mb-4 text-white text-center font-normal text-uncut">
               {"Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions"}
             </p>
           </div>

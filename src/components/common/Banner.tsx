@@ -2,8 +2,10 @@
 import { staggerChildren, fadeIn } from "@/utils/motion";
 import { motion } from "framer-motion";
 import React from "react";
-import ContainerBox from "../layout/ContainerBox";
 import Image from "next/image";
+import Link from "next/link";
+import Container from "../global/container";
+import Particles from "../ui/particles";
 
 const Banner = ({
   title,
@@ -12,75 +14,119 @@ const Banner = ({
   pageName,
   optionalBg,
   className,
+  isSchedule = true,
 }: {
-  title: string;
-  subtitle: string;
+  title: any;
+  subtitle?: string;
   banner?: any;
   pageName: string;
   optionalBg?: React.ReactNode;
-  className?:any;
+  className?: any;
+  isSchedule?: boolean;
 }) => {
   return (
-    <div className=" pt-16 parent">
-      <div className="magicpattern" />
-      <ContainerBox className="lg:h-[45vh] w-full mb-8">
-        <div className="flex flex-col w-full lg:flex-row lg:items-start items-center justify-between ">
-          <motion.div
-            className="lg:w-1/2 mb-12 lg:mb-0"
-            initial="initial"
-            animate="animate"
-            variants={staggerChildren}
-          >
-            <motion.h4 className="text-lg text-white font-semibold mb-3 pl-2">
-              {pageName}
-            </motion.h4>
-            <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 text-white"
-              variants={fadeIn}
-            >
-              {title}
-            </motion.h1>
-            <motion.p className="text-lg mb-8 text-gray-300" variants={fadeIn}>
-              {subtitle}
-            </motion.p>
-            {/* <motion.div className="flex space-x-4" variants={fadeIn}>
-            <button className="bg-[#FCD980]  text-black px-8 py-3 rounded-full hover:bg-yellow-400 transition-colors">
-              View our work
-            </button>
-          </motion.div> */}
-          </motion.div>
+    <section className="relative w-full h-fit overflow-hidden pt-5">
+      <Image
+        className="absolute top-0 left-0 w-full h-auto"
+        src="/images/vectors/shape.svg"
+        alt="shape"
+        width={1200}
+        height={800}
+      />
+      <div className="relative  w-full">
+        <Container className="py-20 max-w-6xl mx-auto">
+          <div className="relative flex flex-col items-center justify-center py-12 lg:py-20 px-0 rounded-2xl lg:rounded-3xl bg-background/20 text-center border border-foreground/20 overflow-hidden">
+            <Particles
+              refresh
+              ease={90}
+              quantity={200}
+              color="#2853fe"
+              className="hidden lg:block absolute inset-0 z-0"
+            />
+            <Particles
+              refresh
+              ease={80}
+              quantity={250}
+              color="#2853fe"
+              className="block lg:hidden absolute inset-0 z-0"
+            />
 
-          {banner && (
             <motion.div
-              className="lg:w-1/2 w-96"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="relative  w-full flex justify-end ">
-                <Image
-                  src={banner}
-                  alt="hero"
-                  width={500}
-                  height={500}
-                  className={className}
-                />
-              </div>
-            </motion.div>
-          )}
-          {optionalBg && (
+              className="absolute -bottom-1/8 left-1/3 -translate-x-1/2 w-44 h-32 lg:h-52 lg:w-1/3 rounded-full blur-[5rem] lg:blur-[10rem] -z-10"
+              style={{
+                background:
+                  "conic-gradient(from 0deg at 50% 50%, #a855f7 0deg, #3b82f6 180deg, #06b6d4 360deg)",
+              }}
+              animate={{
+                rotate: 360,
+              }}
+              transition={{
+                duration: 24,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            />
             <motion.div
-              className="lg:w-1/2 w-96"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
+              className="lg:w-1/2 mb-12 lg:mb-0"
+              initial="initial"
+              animate="animate"
+              variants={staggerChildren}
             >
-              {optionalBg}
+              <motion.h4 className="text-lg font-uncut  mb-3 pl-2">
+                {pageName}
+              </motion.h4>
+              <motion.h1
+                className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 font-title"
+                variants={fadeIn}
+              >
+                {title}
+              </motion.h1>
+              <motion.p className="text-lg mb-8 font-uncut" variants={fadeIn}>
+                {subtitle}
+              </motion.p>
             </motion.div>
-          )}
-        </div>
-      </ContainerBox>
-    </div>
+
+            {banner && (
+              <motion.div
+                className="lg:w-1/2 w-96"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+              >
+                <div className="relative  w-full flex justify-end ">
+                  <Image
+                    src={banner}
+                    alt="hero"
+                    width={500}
+                    height={500}
+                    className={className}
+                  />
+                </div>
+              </motion.div>
+            )}
+            {optionalBg && (
+              <motion.div
+                className="lg:w-1/2 w-96"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+              >
+                {optionalBg}
+              </motion.div>
+            )}
+            {isSchedule ?? (
+              <Link
+                className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white mt-8"
+                href="https://calendly.com/flowentech"
+                target="_blank"
+              >
+                Schedule a Call
+              </Link>
+            )}
+          </div>
+        </Container>
+      </div>
+    </section>
   );
 };
 

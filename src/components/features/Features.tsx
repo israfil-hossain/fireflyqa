@@ -12,7 +12,14 @@ export const Features = () => {
     <div>
        <Banner 
         pageName="/ features" 
-        title="Everything You Need, All in One Place" 
+        title={
+          <>
+            Everything You Need, <br />
+            <span className="font-uncut text-primary">
+              All in One Place. 
+            </span>
+          </>
+        }
         subtitle="Discover a comprehensive suite of features designed to elevate your business. From seamless integrations to advanced customization, we provide the tools you need to succeed."
         banner={features}/>
         <Marque />

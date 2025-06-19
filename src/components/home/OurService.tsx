@@ -1,44 +1,44 @@
-'use client';
+"use client";
 import React from "react";
-import { ServiceData } from "@/constants/serviceData";
+import { services } from "@/constants/serviceData";
 import Image from "next/image";
-import ContainerBox from "../layout/ContainerBox";
+import { cn } from "@/lib/utils";
 
-
-export default function OurService() {
+export default function OurService({className=""}) {
   return (
-    <div className="text-center  items-center py-8">
-      <div className="text-center mb-8 items-center flex flex-col justify-center">
-        <h2 className="text-gray-600">Service</h2>
-        <h3 className="text-3xl font-semibold text-tintblue max-w-lg">
-          Service We Offer
-        </h3>
+     <section
+      className={cn(
+        "max-w-6xl flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto py-4 md:py-6 lg:py-10 px-6 md:px-4",
+        className
+      )}
+    >
+      <h1 className="max-w-2xl mx-auto text-center font-medium text-4xl md:text-5xl lg:text-6xl">
+        <span className="font-title">Explore our services</span> <br />
+        <span className="font-uncut font-medium tracking-tighter">
+          That suits for you
+        </span>
+      </h1>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {services.map((service) => (
+          <article
+            className="p-6 space-y-3 hover:bg-primary/5 border rounded-xl duration-300"
+            key={service.id}
+          >
+            <h1 className="font-medium font-uncut tracking-tight text-2xl">
+              {service.title}
+            </h1>
+            <Image
+              className="w-14"
+              src={service.icon}
+              alt={service.title}
+              width={500}
+              height={500}
+            />
+            <p className="font-light text-lg">{service.description}</p>
+          </article>
+        ))}
       </div>
-      <ContainerBox >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {ServiceData?.map((feature: any, index: number) => (
-            <div className=" bg-gradient-to-br from-white to-neutral-100 hover:bg-gradient-to-br hover:from-blue-50 hover:to-green-50 shadow-lg hover:shadow-xl rounded-lg p-4 cursor-pointer border border-gray-200 h-52 min-w-[350px]"
-              key={index}
-            >
-              <div className="mb-3  flex flex-col items-center space-x-2">
-                <Image
-                  src={feature.icon}
-                  alt="icon"
-                  width={50}
-                  height={50}
-                  className="w-12 h-12 p-2 bg-indigo-200 justify-center items-center border rounded-full overflow-hidden"
-                />
-                <h6 className="text-lg font-semibold text-gray-800">
-                  {feature.title}
-                </h6>
-              </div>
-              <p className="text-sm text-gray-600 justify-self-center text-pretty">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </ContainerBox>
-    </div>
+    </section>
   );
 }

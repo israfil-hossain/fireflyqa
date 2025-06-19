@@ -14,7 +14,7 @@ export const Projects = () => {
   return (
     <div>
       <Banner
-        pageName="what we created"
+        pageName="/ what we created"
         title="Our work Portfolio"
         subtitle="We help teams create great digital products by providing them with tools and technology to make 
         the design-to-code process universally accessible."
@@ -28,7 +28,7 @@ export const Projects = () => {
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
               <div className="space-y-4 h-40">
-                <div className="h-8 pl-5 pt-1 bg-gray-700 rounded w-3/4 text-white ">
+                <div className="h-8 pl-5 pt-1 bg-gray-700 rounded w-3/4 text-white font-uncut">
                   Our Work Portfolio
                 </div>
                 <div className="h-4 bg-gray-700 rounded"></div>
@@ -42,8 +42,14 @@ export const Projects = () => {
           </div>
         }
       />
-      <ContainerBox>
-        <Heading className="font-black mb-10 pt-8"> Case Study</Heading>
+      <ContainerBox className="items-center w-full">
+
+        <h1 className="max-w-2xl  mx-auto items-center text-center font-medium text-4xl md:text-5xl lg:text-6xl mb-16 ">
+        <span className="font-title">Our Custom Software</span> <br />
+        <span className="font-uncut font-medium tracking-tighter">
+          Development Projects
+        </span>
+      </h1>
         <Products />
       </ContainerBox>
     </div>

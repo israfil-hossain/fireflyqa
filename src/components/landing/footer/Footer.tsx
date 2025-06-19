@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import { Copy, Facebook, Instagram, Linkedin } from "lucide-react";
 import "./footer.css";
-import ContainerBox from "../layout/ContainerBox";
+import ContainerBox from "../../layout/ContainerBox";
 import { logo, review } from "@/assets";
 import Image from "next/image";
 import { useState } from "react";
@@ -96,9 +96,9 @@ export default function Footer() {
               >
                 {/* Email section */}
                 <div className="flex flex-col space-y-2">
-                  <div>Email me at</div>
+                  <div>Email us at</div>
                   <div className="font-bold flex space-x-3 ">
-                    <h2>contact@flowentech.com</h2>
+                    <h2>support@flowentech.com</h2>
                     <motion.button
                     onClick={() => handleCopy("flowentech1@gmail.com", "email")}
                     whileTap={{ scale: 0.9 }} // Add button animation when clicked
@@ -113,7 +113,7 @@ export default function Footer() {
 
                 {/* Phone section */}
                 <div className="flex flex-col space-y-2">
-                  <div>Call me at</div>
+                  <div>Call Us : </div>
                   <div className=" flex space-x-3 ">
                     <h2 className="font-bold text-[16px] ">+880-17235-60254</h2>
                     <motion.button
@@ -139,8 +139,7 @@ export default function Footer() {
             >
               <h3 className="text-2xl font-bold text-white">{"Let's Talk!"}</h3>
               <p className="text-gray-300 text-wrap max-w-lg">
-                We are always open to discuss your project and improve your
-                online presence and help with UX/UI design challenges.
+                We are always open to discuss your project and scale your Software. We grow your business Sales 3X. 
               </p>
 
               <div className="flex space-x-4">

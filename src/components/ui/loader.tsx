@@ -6,7 +6,7 @@ const Loader = () => {
   return (
     <div className="fixed top-0 left-0 w-full min-h-screen z-50 bg-white p-10 flex items-center justify-center">
       <div className="relative w-24 h-24 flex items-center justify-center">
-        <div className="absolute inset-0 rounded-full border-2 border-dotted border-gray-400 animate-spin-slow"></div>
+        <div className="absolute inset-0 rounded-full border-2 border-dotted border-gray-400 animate-spin"></div>
 
         <Image
           src={logo2}

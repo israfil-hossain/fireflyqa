@@ -13,21 +13,24 @@ export default function ProjectsShowcase() {
 
   console.log("projects : ===>", productData);
 
-  if(isLoading){
-    return <Loader/>
+  if (isLoading) {
+    return <Loader />;
   }
- 
+
   return (
     <section className="bg-white py-12">
-      <ContainerBox className="container mx-auto px-4">
+      <ContainerBox className="container mx-auto px-4 py-10">
         {/* Heading */}
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-3xl font-bold text-gray-900">
-            View our projects
-          </h2>
+        <div className="flex flex-col spacy-y-5 pb-10 justify-center items-center">
+          <h1 className="max-w-2xl mx-auto text-start font-medium text-4xl md:text-4xl lg:text-5xl">
+            <span className="font-title">Our Custom Software</span> <br />
+            <span className="font-uncut font-medium tracking-tighter">
+              Development Products
+            </span>
+          </h1>
           <a
             href="/projects"
-            className="text-blue-600 hover:text-blue-800 flex items-center"
+            className="text-blue-600 hover:text-blue-800 flex r font-uncut mt-5 mb-8"
           >
             View More <span className="ml-2">→</span>
           </a>
@@ -93,7 +96,7 @@ export default function ProjectsShowcase() {
                     </h3>
                     <Truncate
                       text={project?.description}
-                      limit = {45}
+                      limit={45}
                       className="text-white px-2 text-center"
                     />
                     <a

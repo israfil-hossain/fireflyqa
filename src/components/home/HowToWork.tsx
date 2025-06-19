@@ -22,13 +22,14 @@ export const HowToWork = () => {
               variants={staggerChildren}
             >
               <motion.h2
-                className="text-3xl md:text-4xl font-bold mb-4"
+                className="max-w-2xl mx-auto font-medium text-4xl md:text-5xl lg:text-6xl mb-4 font-title"
                 variants={fadeIn}
               >
                 How we work
               </motion.h2>
+              
               <motion.p
-                className="text-gray-600 mb-8 text-left"
+                className="mb-8 text-left font-uncut font-medium tracking-tighter mr-6"
                 variants={fadeIn}
               >
                 At Flowentech, we follow a structured and efficient workflow to

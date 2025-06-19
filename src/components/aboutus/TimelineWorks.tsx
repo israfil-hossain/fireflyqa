@@ -57,10 +57,10 @@ export default function TimelineWorks() {
     <div className=" bg-accent">
       <div className="container mx-auto py-12 px-4">
       <div className="text-center mb-12 items-center flex flex-col justify-center">
-          <h2 className="text-gray-600">/works</h2>
-          <h3 className="text-3xl font-semibold  max-w-lg x">
-            How development <br/> <span className="font-bold text-tintblue">through Alcaline works</span>
-          </h3>
+          <h2 className="text-gray-600 italic font-uncut">/works</h2>
+          <h1 className="text-4xl max-w-lg font-title">
+            How development through<br/> <span className=" font-uncut font-medium"> <span className="text-primary italic">Alcaline</span> works</span>
+          </h1>
         </div>
       <motion.div
         className="relative"

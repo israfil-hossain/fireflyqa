@@ -10,7 +10,7 @@ import { PortableText } from "next-sanity";
 
 import Loader from "@/components/ui/loader";
 import { Heading } from "@/components/ui/header";
-import { portableTextComponents } from "@/components/portable-text";
+import { portableTextComponents } from "@/components/global/portable-text";
 
 
 export function SingleProduct({ slug }: { slug: string }) {

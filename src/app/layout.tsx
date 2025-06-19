@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import Footer from "@/components/footer/Footer";
+import { Header } from "@/components/landing/navbar/Header";
+import Footer from "@/components/landing/footer/Footer";
 import { Outfit } from "next/font/google";
 import Providers from "@/components/provider";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
+import Promotion from "@/components/landing/navbar/promotion";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body className={`${outfit.variable} antialiased`}>
+        <Promotion />
         <Providers>
           <Header />
           {children}

@@ -11,30 +11,41 @@ export default function FeaturesSection() {
     <section className="bg-accent py-12">
       <ContainerBox>
         <div className="text-center mb-12 items-center flex flex-col justify-center">
-          <h2 className="text-gray-600">Features</h2>
-          <h3 className="text-3xl font-semibold text-tintblue max-w-lg">
-            Design that solves problems, one product at a time
-          </h3>
-        </div>
+          <h2 className="text-gray-600 font-uncut italic">/features</h2>
 
+          <h1 className="text-4xl max-w-lg font-title">
+            Our Approach that <br />
+            <span className=" font-uncut font-medium">
+              {" "}
+              <span className="text-primary italic">Solved</span> Your Problem
+            </span>
+          </h1>
+        </div>
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-3"
           variants={containerVariants}
           initial="hidden"
           animate="show"
         >
           {featureData.map((feature) => (
-            <motion.div
+            <article
+              className="p-6 space-y-3 hover:bg-primary/5 border rounded-xl duration-300"
               key={feature.id}
-              className="bg-white p-6 rounded-lg text-start"
-              variants={itemVariants}
             >
-              <div className="mb-4">
-                <Image src={feature.icon} alt="icon" width={50} height={50} className="w-6 h-6" />
+              <h1 className="font-medium font-uncut tracking-tight text-2xl">
+                {feature.title}
+              </h1>
+              <div className="bg-primary/10 rounded-full p-4 w-16 h-16 ">
+              <Image
+                className="w-10"
+                src={feature.icon}
+                alt={feature.title}
+                width={200}
+                height={200}
+              />
               </div>
-              <h6 className="text-lg font-semibold mb-2 text-darkblue">{feature.title}</h6>
-              <p className="text-darkblue text-[14px] font-normal">{feature.description}</p>
-            </motion.div>
+              <p className="font-light text-lg">{feature.description}</p>
+            </article>
           ))}
         </motion.div>
       </ContainerBox>

@@ -32,8 +32,16 @@ export default async function Page() {
   return (
     <div>
       <Banner
-        pageName="blogs"
-        title="Our Blogs: Insights, Trends, and Innovation"
+        pageName="/ blogs"
+        title={
+          <>
+            Our Blogs :  <br />
+            <span className="font-uncut text-primary text-4xl">
+              Insights, Trends, and Innovation 
+            </span>
+          </>
+        }
+        isSchedule={false}
         subtitle="Welcome to our blog, where we share insights, strategies, and the latest trends in digital innovation. From expert tips on design and development to deep dives into the technology that powers modern digital experiences, our blog is here to inform and inspire."
         optionalBg={
           <div className="relative ">
