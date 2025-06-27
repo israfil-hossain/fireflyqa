@@ -52,9 +52,7 @@ export const Header = () => {
   ];
 
   return (
-    <header
-      className={` top-0 fixed  left-0  right-0 z-50 w-full`}
-    >
+    <header className={` top-0 fixed  left-0  right-0 z-50 w-full`}>
       <>
         <Navbar>
           {!isOpen ? (
@@ -63,8 +61,15 @@ export const Header = () => {
               <NavItems items={navItems} />
               <div className="flex items-center gap-4">
                 {/* <div className="w-20"></div> */}
-                <NavbarButton variant="primary" href="/contact-us">
+
+                <NavbarButton variant="secondary" href="/contact-us">
                   Contact Us
+                </NavbarButton>
+                <NavbarButton
+                  variant="primary"
+                  href="https://calendly.com/flowentech/30min"
+                >
+                  Book Now
                 </NavbarButton>
                 {/* <NavbarButton variant="secondary">Book a call</NavbarButton>  */}
                 {/* <Link href="/login">
@@ -96,9 +101,17 @@ export const Header = () => {
                   </a>
                 ))}
                 <div className="flex w-full flex-col gap-4">
-                  <NavbarButton variant="primary" href="/contact-us">
+                  <NavbarButton variant="secondary" href="/contact-us">
                     Contact Us
                   </NavbarButton>
+                  
+                  <NavbarButton
+                    variant="primary"
+                    href="https://calendly.com/flowentech/30min"
+                  >
+                    Book Now
+                  </NavbarButton>
+
                   {/* <Link href="/login">
                   <RainbowButton>Get Started</RainbowButton>
                 </Link> */}

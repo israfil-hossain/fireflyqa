@@ -69,7 +69,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
+.fluid{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100dvw; 
+  height: 100dvh; 
+}
 
 .parent {
   width: 100%;

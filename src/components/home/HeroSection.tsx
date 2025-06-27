@@ -153,7 +153,7 @@ function Hero() {
             <div className="flex items-center justify-center gap-5 mt-2 md:mt-6 lg:mt-6">
               <Link
                 className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
-                href="https://calendly.com/flowentech"
+                href="https://calendly.com/flowentech/30min"
                 target="_blank"
               >
                 Schedule a Call
