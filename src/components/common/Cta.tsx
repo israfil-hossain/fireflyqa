@@ -42,8 +42,8 @@ const CTA = () => {
           />
           <div className="text-center px-4">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-medium leading-snug">
-              Ready to scale your <br />
-              <span className="font-title italic text-primary">Business</span>?
+              Ready to get your <br />
+              <span className="font-title italic text-primary">Solutions</span>?
             </h2>
 
             <p className="mt-4 text-sm md:text-lg text-accent-foreground/80 max-w-2xl mx-auto font-uncut">
@@ -53,7 +53,7 @@ const CTA = () => {
 
           <Link
             className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white mt-8"
-            href="https://calendly.com/flowentech"
+            href="https://calendly.com/fireflyqa/30min"
             target="_blank"
           >
             Schedule a Call

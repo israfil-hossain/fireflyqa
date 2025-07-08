@@ -1,17 +1,9 @@
 "use client";
 
-import { logo, logo2 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Drawer,
-  DrawerTrigger,
-  DrawerContent,
-  DrawerClose,
-  DrawerHeader,
-  DrawerFooter,
-} from "@/components/ui/drawer";
+
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
@@ -37,13 +29,13 @@ export const Header = () => {
       name: "Home",
       link: "/",
     },
-    {
-      name: "Features",
-      link: "/feature",
+     {
+      name: "About Us",
+      link: "/about-us",
     },
     {
-      name: "Projects",
-      link: "/projects",
+      name: "Our Services",
+      link: "/our-services",
     },
     {
       name: "Blog",
@@ -67,7 +59,7 @@ export const Header = () => {
                 </NavbarButton>
                 <NavbarButton
                   variant="primary"
-                  href="https://calendly.com/flowentech/30min"
+                  href="https://calendly.com/fireflyqa/30min"
                 >
                   Book Now
                 </NavbarButton>

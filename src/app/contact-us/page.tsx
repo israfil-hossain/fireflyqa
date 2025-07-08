@@ -6,7 +6,7 @@ import React from 'react'
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact-Us | Flowentech",
+  title: "Contact-Us | Fireflyqa",
   description:
     "Leading software development agency offering custom web, mobile, and cloud solutions. We provide cutting-edge digital transformation services to boost your business.",
 };

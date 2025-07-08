@@ -1,6 +1,6 @@
 
-import { logo2 } from "@/assets";
 import Image from "next/image";
+import { logo } from "../../../public/images";
 
 const Loader = () => {
   return (
@@ -9,7 +9,7 @@ const Loader = () => {
         <div className="absolute inset-0 rounded-full border-2 border-dotted border-gray-400 animate-spin"></div>
 
         <Image
-          src={logo2}
+          src={logo}
           alt="loaderImage"
           width={200} 
           height={200}

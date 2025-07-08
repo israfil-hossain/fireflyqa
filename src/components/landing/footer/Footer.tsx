@@ -1,232 +1,82 @@
-"use client";
 
-// components/Footer.js
-import { motion } from "framer-motion";
-import { Copy, Facebook, Instagram, Linkedin } from "lucide-react";
-import "./footer.css";
-import ContainerBox from "../../layout/ContainerBox";
-import { logo, review } from "@/assets";
+import { Phone, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
-import { useMutation } from "@tanstack/react-query";
-import { subscribeToNewsletter } from "@/lib/requests";
-import { toast } from "sonner";
-import { ClientError } from "graphql-request";
+import { logo } from "../../../../public/images";
+import Link from "next/link";
 
-export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState<string | null>(null);
-  const [isCopied, setIsCopied] = useState("");
-
-  const handleCopy = (text: string, type: "email" | "phone") => {
-    navigator.clipboard.writeText(text).then(() => {
-      setIsCopied(type);
-
-      // Show a toast notification
-      toast.success(
-        `${type === "email" ? "Email" : "Phone"} copied to clipboard!`
-      );
-
-      // Reset the animation after a brief delay
-      setTimeout(() => setIsCopied(""), 2000);
-    });
-  };
-
-  const { mutateAsync, isPending, error } = useMutation({
-    mutationKey: ["newsletter"],
-    mutationFn: subscribeToNewsletter,
-    onError: onError,
-    onSuccess: onSuccess,
-  });
-
-  function onSuccess() {
-    toast.success(
-      "Subscribed to newsletter! Check your email to confirm your subscription."
-    );
-    setEmail(""); // Clear email after successful subscription
-  }
-
-  function onError(err: ClientError) {
-    if (!err.response.errors) return toast.error("Something went wrong");
-    toast.error(err.response.errors[0]!.message);
-  }
-
-  function handleSubscribe() {
-    if (!email) {
-      setEmailError("Email is required");
-      return;
-    }
-
-    if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address");
-      return;
-    }
-
-    setEmailError(null); // Clear any previous errors
-    mutateAsync(email);
-  }
-
-  function validateEmail(email: string) {
-    // Simple regex for email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
-
+export const Footer = () => {
   return (
-    <footer>
-      <div className="parentF">
-        <div className="magicpatternF" />
-        <ContainerBox>
-          <div className="container grid lg:grid-cols-2 grid-cols-1 lg:gap-16 px-4 pt-10 items-center">
-            {/* Left section */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="space-y-4 flex flex-col justify-end"
-            >
-              <Image src={logo} alt="Logo" width={200} height={100} />
-              <p className="text-gray-300 max-w-xs pb-8">
-                We are always open to discuss your project and improve your
-                online presence.
-              </p>
-              <motion.div
-                className="p-4 lg:px-8 bg-tirtiary text-tintblue lg:rounded-t-lg lg:flex flex-col space-y-4 lg:space-y-2 lg:space-x-0 justify-between"
-                whileHover={{ scale: 1.05 }}
-              >
-                {/* Email section */}
-                <div className="flex flex-col space-y-2">
-                  <div>Email us at</div>
-                  <div className="font-bold flex space-x-3 ">
-                    <h2>support@flowentech.com</h2>
-                    <motion.button
-                    onClick={() => handleCopy("flowentech1@gmail.com", "email")}
-                    whileTap={{ scale: 0.9 }} // Add button animation when clicked
-                    animate={isCopied === "email" ? { scale: [1, 1.2, 1] } : {}} // Animate if copied
-                    className="text-blue-500 underline text-sm"
-                  >
-                    {isCopied === "email" ? "Copied!" : <Copy className="w-5 h-5 text-tintblue"/>}
-                  </motion.button>
-                  </div>
-                  
-                </div>
-
-                {/* Phone section */}
-                <div className="flex flex-col space-y-2">
-                  <div>Call Us : </div>
-                  <div className=" flex space-x-3 ">
-                    <h2 className="font-bold text-[16px] ">+880-17235-60254</h2>
-                    <motion.button
-                    onClick={() => handleCopy("+880-17235-60254", "phone")}
-                    whileTap={{ scale: 0.9 }} // Add button animation when clicked
-                    animate={isCopied === "phone" ? { scale: [1, 1.2, 1] } : {}} // Animate if copied
-                    className="text-blue-500 underline text-sm"
-                  >
-                    {isCopied === "phone" ? "Copied!" : <Copy  className="w-5 h-5 text-tintblue"/>}
-                  </motion.button>
-                  </div>
-                  
-                </div>
-              </motion.div>
-            </motion.div>
-
-            {/* Right section */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mt-8 md:mt-0 space-y-4 mb-5 pb-5 pt-5"
-            >
-              <h3 className="text-2xl font-bold text-white">{"Let's Talk!"}</h3>
-              <p className="text-gray-300 text-wrap max-w-lg">
-                We are always open to discuss your project and scale your Software. We grow your business Sales 3X. 
-              </p>
-
-              <div className="flex space-x-4">
-                {/* Social Icons */}
-                <motion.a href="#" whileHover={{ scale: 1.1 }}>
-                  <Facebook size={20} className="text-[#2c7cf1]" />
-                </motion.a>
-                <motion.a href="#" whileHover={{ scale: 1.1 }}>
-                  <Instagram className="text-[#2c7cf1]" />
-                </motion.a>
-                <motion.a href="#" whileHover={{ scale: 1.1 }}>
-                  <Linkedin size={20} className="text-[#2c7cf1]" />
-                </motion.a>
-              </div>
-
-              <div className="pt-5">
-                <p className="text-[17px] text-white font-medium">
-                  Subscribe to Newsletter
-                </p>
-                <div className="flex flex-col mt-3">
-                  <div className="flex">
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      value={email}
-                      onChange={(e: any) => setEmail(e.target.value)}
-                      className="px-5 py-2 rounded-l-lg"
-                      required
-                    />
-                    <button
-                      onClick={handleSubscribe}
-                      disabled={isPending}
-                      className="bg-tirtiary py-2 rounded-r-lg rounded-l-none px-3 text-tintblue font-medium"
-                    >
-                      {isPending ? "Loading..." : "Subscribe"}
-                    </button>
-                  </div>
-                  {emailError && (
-                    <p className="text-red-500 mt-1 text-sm">{emailError}</p>
-                  )}
-                </div>
-              </div>
-            </motion.div>
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo & Description */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <Image
+                src={logo}
+                alt="FireFly Logo"
+                className="h-8 w-auto"
+                width={32} 
+                height={32}
+              />
+              <span className="font-heading font-bold text-xl">FireFly</span>
+            </div>
+            <p className="font-body text-gray-300 text-sm">
+              Firefly Trading Contracting Hospitality offers skilled & unskilled manpower,
+              MEP, HVAC, BAS, and comprehensive maintenance for the hospitality and commercial sectors.
+            </p>
           </div>
-        </ContainerBox>
-      </div>
-      <ContainerBox>
-        {/* Bottom section */}
-        <div className="border-t border-gray-500 py-8 text-center lg:flex lg:space-y-0 space-y-5 lg:justify-between justify-center items-center">
-          <p className="text-gray-400">Copyright 2025, Flowentech.com</p>
-          <motion.div
-            className=""
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <ul className="flex justify-center space-x-4 lg:text-[16px] text-[14px]">
-              <li>
-                <a href="/" className="hover:text-primary">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/about-us" className="hover:text-primary">
-                  About-us
-                </a>
-              </li>
-              <li>
-                <a href="/feature" className="hover:text-primary">
-                  Features
-                </a>
-              </li>
 
-              <li>
-                <a href="/faq" className="hover:text-primary">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="/blog" className="hover:text-primary">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </motion.div>
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-heading font-semibold text-lg mb-4">Quick Links</h3>
+            <div className="space-y-2">
+              <Link href="/" className="font-body text-gray-300 hover:text-primary transition-colors block">Home</Link>
+              <Link href="/about-us" className="font-body text-gray-300 hover:text-primary transition-colors block">About Us</Link>
+              <Link href="/our-services" className="font-body text-gray-300 hover:text-primary transition-colors block">Our Services</Link>
+              <Link href="/contact-us" className="font-body text-gray-300 hover:text-primary transition-colors block">Contact</Link>
+            </div>
+          </div>
+
+          {/* Our Services */}
+          <div>
+            <h3 className="font-heading font-semibold text-lg mb-4">Our Services</h3>
+            <div className="space-y-2 font-body text-gray-300 text-sm">
+              <p>Skilled & Unskilled Manpower</p>
+              <p>MEP (Mechanical, Electrical & Plumbing)</p>
+              <p>HVAC & BAS Solutions</p>
+              <p>Commercial Kitchen Equipment</p>
+              <p>Renovation & Installation</p>
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="font-heading font-semibold text-lg mb-4">Contact Info</h3>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 text-[#a6079b]" />
+                <span className="font-body text-gray-300 text-sm">+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 text-[#a6079b]" />
+                <span className="font-body text-gray-300 text-sm">info@firefly.com</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4 text-[#a6079b]" />
+                <span className="font-body text-gray-300 text-sm">Business District, City, Country</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </ContainerBox>
+
+        {/* Footer Bottom */}
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p className="font-body text-gray-400 text-sm">
+            © 2025 FireFlyqa Trading Contracting Hospitality. All rights reserved. <a href="https://flowentech.com" className="text-primary hover:underline">FlowenTech</a> designed this website.
+          </p>
+        </div>
+      </div>
     </footer>
   );
-}
+};

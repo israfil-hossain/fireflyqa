@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/landing/navbar/Header";
-import Footer from "@/components/landing/footer/Footer";
 import { Outfit } from "next/font/google";
 import Providers from "@/components/provider";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import Promotion from "@/components/landing/navbar/promotion";
+import { Footer } from "@/components/landing/footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,12 +28,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Flowentech | Top Software Development Agency",
+  title: "Fireflyqa | Top leading company in qatar",
   description:
-    "Leading software development agency offering custom web, mobile, and cloud solutions. We provide cutting-edge digital transformation services to boost your business.",
+    "Leading service provider specializing in contracting and hospitality solutions. We deliver high-quality services including MEP, HVAC, BAS, renovation, installation, maintenance, and skilled manpower supply tailored to exceed your expectations",
   keywords:
     "software development, custom web solutions, mobile app development, cloud solutions, software agency, digital transformation",
 };
+
 
 export default function RootLayout({
   children,

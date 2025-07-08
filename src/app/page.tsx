@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Top Software Development Agency | Custom Web & Mobile Solutions
+          Top Service Provider Agency | Custom  Solutions
         </title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -18,7 +18,7 @@ export default function Home() {
           name="keywords"
           content="software development, custom web solutions, mobile app development, cloud solutions, software agency, digital transformation,web development, mobile development, app development, wordpress,Bubble.io, no-code platform "
         />
-        <link rel="canonical" href="https://flowentech.com" />
+        <link rel="canonical" href="https://fireflyqa.com" />
 
         <meta
           property="og:title"
@@ -30,11 +30,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.flowentech.com/images/og-image.jpg"
+          content="https://www.fireflyqa.com/images/og-image.jpg"
         />
-        <meta property="og:url" content="https://www.flowentech.com/" />
+        <meta property="og:url" content="https://www.fireflyqa.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:flowentech" content="Flowentech" />
+        <meta property="og:Fireflyqa" content="Fireflyqa" />
       </Head>
       <div className="min-h-screen ">
         <HomeComponent />

@@ -1,6 +1,5 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { logo, logo2 } from "@/assets";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
   AnimatePresence,
@@ -14,6 +13,7 @@ import Link from "next/link";
 import React, { useRef, useState } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import ZigzagParticles from "./zig-zag";
+import { logo } from "../../../public/images";
 // import { logo } from "~/images";
 
 interface NavbarProps {
@@ -250,9 +250,9 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 flex items-center px-2 py-1 text-sm font-normal text-black"
     >
-      <Image src={logo2} alt="logo" width={60} height={60} className="" />
-      <span className="font-bold text-2xl">flowen</span>
-      <span className="font-bold text-2xl text-primary/80 ">tech</span>
+      <Image src={logo} alt="logo" width={60} height={60} className="" />
+      <span className="font-bold text-2xl">fire</span>
+      <span className="font-bold text-2xl text-primary/80 ">fly</span>qa
     </Link>
   );
 };

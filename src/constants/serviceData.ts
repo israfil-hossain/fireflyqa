@@ -40,7 +40,7 @@ export const ServiceData = [
     
 ]
 
-export const services = [
+export const services2 = [
   {
     id: 1,
     title: "Staff Augmentation",
@@ -98,5 +98,64 @@ export const services = [
     title: "Support & Consulting",
     description: "Turning your ideas into functional, market-ready products.",
     icon: "/images/services/suitecase.svg",
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    title: "Skilled & Unskilled Manpower",
+    description:
+      "Reliable manpower supply tailored to your project requirements. We provide skilled professionals and general labor to meet diverse industry needs.",
+     icon: "/images/services/palette.svg", 
+  },
+  {
+    id: 2,
+    title: "Renovation",
+    description:
+      "Expert renovation services from small upgrades to complete overhauls. We ensure quality execution with precision and safety.",
+    icon: "/images/services/eye.svg",
+  },
+  {
+    id: 3,
+    title: "Installation",
+    description:
+      "Professional installation of systems and equipment, ensuring seamless operation, safety, and long-term performance.",
+    icon: "/images/services/happy-emoji.svg",
+  },
+  {
+    id: 4,
+    title: "Maintenance",
+    description:
+      "Scheduled and on-demand maintenance services to maximize system uptime, asset longevity, and performance efficiency.",
+    icon: "/images/services/suitecase.svg",
+  },
+  {
+    id: 5,
+    title: "MEP Services",
+    description:
+      "Full-scale Mechanical, Electrical, and Plumbing services—from design to installation and maintenance—for industrial and commercial projects.",
+    icon: "/images/services/suitecase.svg",
+  },
+  {
+    id: 6,
+    title: "HVAC Services",
+    description:
+      "Heating, Ventilation, and Air Conditioning solutions focused on indoor comfort, energy efficiency, and modern climate control.",
+    icon: "/images/services/suitecase.svg",
+  },
+  {
+    id: 7,
+    title: "Building Automation Systems (BAS)",
+    description:
+      "Smart building automation services that improve energy efficiency, safety, and system integration with remote monitoring.",
+    icon: "/images/services/development.svg",
+  },
+  {
+    id: 8,
+    title: "Kitchen Equipment Maintenance",
+    description:
+      "Specialized repair and maintenance of commercial kitchen equipment to ensure smooth and hygienic food service operations.",
+    icon: "/images/services/eye.svg",
   },
 ];

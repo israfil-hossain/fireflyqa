@@ -3,34 +3,92 @@
 import React from "react";
 import Image from "next/image";
 import {
-  Building, Rocket, Phone, Building2, Code, Heart, Car,
-  Camera, Briefcase, Globe, Scale, Users, Trophy, Gamepad2,
-  Shirt, Zap, Wheat, Truck
+  Wrench, Building2, Users, Settings2, Flame, Hammer, ChefHat,
+  Cog, Hotel, AirVent, Lightbulb, Droplet, PlugZap,
+  Code,
+  AirVentIcon
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { IconRobot } from "@tabler/icons-react";
 
 const industryData = [
-  { icon: <Building size={20} />, label: "Finance & Banking", color: "bg-pink-100", className:"rounded-tl-3xl rounded-br-3xl" },
-  { icon: <Rocket size={20} />, label: "E-commerce", color: "bg-green-100",className:"rounded-tl-3xl rounded-br-3xl" },
-  { icon: <Building2 size={20} />, label: "Real Estate", color: "bg-blue-100",className:"rounded-tl-3xl rounded-br-3xl" },
-  { icon: <Code size={20} />, label: "Software", color: "bg-yellow-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Heart size={20} />, label: "Health & Fitness", color: "bg-green-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Car size={20} />, label: "Automotive", color: "bg-purple-100" ,className:"rounded-tr-3xl rounded-bl-3xl"},
-  { icon: <Camera size={20} />, label: "Photo & Video", color: "bg-yellow-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Briefcase size={20} />, label: "Business", color: "bg-indigo-100",className:"rounded-tl-3xl rounded-br-3xl" },
-  { icon: <Rocket size={20} />, label: "Startup", color: "bg-blue-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Users size={20} />, label: "Non-profit", color: "bg-yellow-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Building size={20} />, label: "Govt. & Public Sector", color: "bg-blue-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Trophy size={20} />, label: "Sports & Fitness", color: "bg-purple-100",className:"rounded-tr-3xl rounded-bl-3xl" },
-  { icon: <Shirt size={20} />, label: "Fashion & Apparel", color: "bg-yellow-100",className:"rounded-tl-3xl rounded-br-3xl" },
-  { icon: <Zap size={20} />, label: "Energy & Utilities", color: "bg-green-100" ,className:"rounded-tl-3xl rounded-br-3xl"},
-  { icon: <Wheat size={20} />, label: "Agriculture", color: "bg-green-100",className:"rounded-tl-3xl rounded-br-3xl" },
-  { icon: <Truck size={20} />, label: "Logistics", color: "bg-blue-100" ,className:"rounded-tl-3xl rounded-br-3xl"},
+  {
+    icon: <Users size={20} />,
+    label: "Manpower (Skilled & Unskilled)",
+    color: "bg-pink-100",
+    className: "rounded-tl-3xl rounded-br-3xl",
+  },
+  {
+    icon: <Wrench size={20} />,
+    label: "Mechanical Services",
+    color: "bg-blue-100",
+    className: "rounded-tr-3xl rounded-bl-3xl",
+  },
+  {
+    icon: <PlugZap size={20} />,
+    label: "Electrical Services",
+    color: "bg-yellow-100",
+    className: "rounded-tl-3xl rounded-br-3xl",
+  },
+  {
+    icon: <Droplet size={20} />,
+    label: "Plumbing Services",
+    color: "bg-green-100",
+    className: "rounded-tr-3xl rounded-bl-3xl",
+  },
+  {
+    icon: <AirVent size={20} />,
+    label: "HVAC Solutions",
+    color: "bg-purple-100",
+    className: "rounded-tl-3xl rounded-br-3xl",
+  },
+  {
+    icon: <Cog size={20} />,
+    label: "BAS (Automation Systems)",
+    color: "bg-indigo-100",
+    className: "rounded-tr-3xl rounded-bl-3xl",
+  },
+  {
+    icon: <ChefHat size={20} />,
+    label: "Kitchen Equipment Maintenance",
+    color: "bg-yellow-100",
+    className: "rounded-tl-3xl rounded-br-3xl",
+  },
+  {
+    icon: <Hammer size={20} />,
+    label: "Renovation & Installation",
+    color: "bg-green-100",
+    className: "rounded-tr-3xl rounded-bl-3xl",
+  },
+  {
+    icon: <Hotel size={20} />,
+    label: "Hospitality Services",
+    color: "bg-pink-100",
+    className: "rounded-tl-3xl rounded-br-3xl",
+  },
+  {
+    icon: <Settings2 size={20} />,
+    label: "Facility Management",
+    color: "bg-blue-100",
+    className: "rounded-tr-3xl rounded-bl-3xl",
+  },
+   {
+    icon: <Code size={20} />,
+    label: "Web & Software Solutions",
+    color: "bg-green-100",
+    className: "rounded-tr-3xl rounded-bl-3xl",
+  },
+  {
+    icon: <IconRobot size={20} />,
+    label: "AI Agents",
+    color: "bg-purple-100",
+    className: "rounded-tl-3xl rounded-br-3xl",
+  },
 ];
 
 const OurIndustryExpertise = () => {
   return (
-    <section className="relative bg-[#0B0823] py-24 px-4 md:px-8 overflow-hidden ">
+    <section className="relative bg-[#4b163A] py-24 px-4 md:px-8 overflow-hidden">
       {/* Background Image */}
       <Image
         className="absolute top-0 left-0 w-full md:h-full object-cover md:object-left-top z-0"
@@ -44,22 +102,27 @@ const OurIndustryExpertise = () => {
       <div className="relative z-10">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-title">
-            Our Industry Expertises
+            Our Industry Expertise
           </h1>
           <p className="text-xl text-gray-300 font-uncut">
-            Our deep understanding of diverse industries empowers us to design customized
-            software solutions. Let our expertise be the catalyst for your next triumph.
+            Firefly delivers expert manpower and specialized technical contracting solutions across core sectors like MEP, hospitality, and maintenance.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 max-w-6xl mx-auto w-[70%] pb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto w-[85%] pb-10">
           {industryData.map((item, index) => (
             <div
               key={index}
-              className={cn("flex flex-col items-center justify-center text-gray-800  px-2 py-3 transition-transform hover:scale-105",item.color, item.className)}
+              className={cn(
+                "flex flex-col items-center justify-center text-gray-800 px-2 py-3 transition-transform hover:scale-105",
+                item.color,
+                item.className
+              )}
             >
               <div className="mb-2">{item.icon}</div>
-              <div className="text-sm font-medium text-center font-uncut">{item.label}</div>
+              <div className="text-sm font-medium text-center font-uncut">
+                {item.label}
+              </div>
             </div>
           ))}
         </div>

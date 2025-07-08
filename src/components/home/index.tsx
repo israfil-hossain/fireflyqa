@@ -25,23 +25,21 @@ export default function HomeComponent() {
   return (
     <>
       <HeroSection />
-      <Marque />
+      {/* <Marque /> */}
       <MethodologySection />
       <HowToWork />
       <OurService />
-      <ProjectsShowcase />
-      <OurtechStack />
+      {/* <ProjectsShowcase /> */}
+      {/* <OurtechStack /> */}
       <LeadingSection />
       <OurClients />
       <OurIndustryExpertise />
-      <TimelineWorks />
+      {/* <TimelineWorks /> */}
       <FeaturesSection />
       <CTA />
       <FrequentlyQuestion />
        <ContactSection />
-       <div className="mb-10">
-        <Newsletter />
-      </div>
+     
 
     
       {/* <WorldMapDemo /> */}

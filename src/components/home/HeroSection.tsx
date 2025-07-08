@@ -1,82 +1,10 @@
 // "use client";
 
-// import { motion  } from "framer-motion";
-// import { ArrowRight } from "lucide-react";
-// import ContainerBox from "../layout/ContainerBox";
-// import { fadeIn, staggerChildren } from "@/utils/motion";
-// import './bg.css';
-// import { hero } from "@/assets";
-// import Image from "next/image";
-// import ScheduleButton from "../common/ScheduleButton";
-// import Link from "next/link";
-
-// export const HeroSection = () => {
-
-//   return (
-//     <div className=" pt-16 parent">
-//       <div className="magicpattern"/>
-//       <ContainerBox className="h-[65vh]">
-//       <div className="flex flex-col lg:flex-row items-start justify-between ">
-//         <div
-//           className="lg:w-1/2 mb-12 lg:mb-0"
-//         >
-//           <motion.h1
-//             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
-//             variants={fadeIn}
-//           >
-//             Building stellar websites for early startups
-//           </motion.h1>
-//           <motion.p className="text-lg mb-8 text-gray-300" variants={fadeIn}>
-//             FlowenTech is a leading software agency specializing in creating high-performance, user-friendly websites for early-stage startups.
-//           </motion.p>
-//           <motion.div className="flex space-x-4" variants={fadeIn}>
-//             <Link href="/contact-us" className="bg-gradient-to-r from-[#5454D4] to-tintblue border hover:bg-blue-300 cursor-pointer  text-white px-6 py-2 rounded-full  transition-colors">
-//               Contact Us
-//             </Link>
-//             <button className="flex items-center space-x-2 text-white hover:text-blue-300 transition-colors ">
-//               <ScheduleButton />
-//               <ArrowRight size={20} />
-//             </button>
-//           </motion.div>
-//         </div>
-
-//         <div
-//           className="lg:w-1/2 w-96"
-//         >
-//           <div className="relative h-96">
-//            <Image src={hero} alt="hero" width={500} height={500} className="absolute z-10 top-0"/>
-//            </div>
-//           <div className="relative ">
-//             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg transform rotate-3"></div>
-//             <div className="relative bg-gray-800 p-6 rounded-lg shadow-xl ">
-//               <div className="flex space-x-2 mb-4">
-//                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
-//                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-//                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
-//               </div>
-//               <div className="space-y-4">
-//                 <div className="h-4 bg-gray-700 rounded w-3/4"></div>
-//                 <div className="h-4 bg-gray-700 rounded"></div>
-//                 <div className="h-4 bg-gray-700 rounded w-5/6"></div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </ContainerBox>
-//     </div>
-//   );
-// };
-
 import React from "react";
 import Link from "next/link";
 import { PhoneIcon } from "lucide-react";
 import Image from "next/image";
 import Container from "../global/container";
-import { OrbitingCircles } from "../ui/orbiting-circles";
-import Icons from "../global/icons";
-import { Button } from "../ui/button";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 function Hero() {
   return (
@@ -89,16 +17,9 @@ function Hero() {
         height={800}
       />
 
-      {/* <div className="relative flex flex-col items-center justify-center w-full py-20"> */}
-      <div className="relative flex flex-col items-center gap-8 px-6 md:px-4">
-        {/* <div className="w-fit py-1.5 px-4 rounded-full bg-yellow-100">
-          Reach out for development
-        </div> */}
-      </div>
-      {/* <div className="absolute flex lg:hidden size-40 rounded-full bg-blue-500 blur-[10rem] top-0 left-1/2 -translate-x-1/2 -z-10"></div> */}
-
+   
       <div className="flex flex-col items-center justify-center gap-y-8 relative">
-        <Container className="flex absolute inset-0 top-1 mb-auto flex-col items-center justify-center w-full min-h-screen -z-10">
+        {/* <Container className="flex absolute inset-0 top-1 mb-auto flex-col items-center justify-center w-full min-h-screen -z-10">
           <OrbitingCircles speed={0.5} radius={300}>
             <Icons.circle1 className="size-4 text-primary/70" />
             <Icons.circle2 className="size-1 text-primary/80" />
@@ -114,18 +35,18 @@ function Hero() {
             <Icons.circle1 className="size-4 text-primary/60" />
             <Icons.circle2 className="size-1 text-primary/90" />
           </OrbitingCircles>
-        </Container>
-        <Container className="relative lg:block overflow-hidden mt-0">
+        </Container> */}
+        <Container className="relative lg:block overflow-hidden mt-5">
           <button className="group relative grid overflow-hidden rounded-full px-2 py-1 shadow-[0_1000px_0_0_hsl(0_0%_15%)_inset] transition-colors duration-200 mx-auto">
             <span>
               <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(blue,_transparent_90%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
             </span>
             <span className="backdrop absolute inset-[1px] rounded-full bg-background transition-colors duration-200 group-hover:bg-indigo-100" />
             <span className="z-10 py-0.5 text-sm text-indigo-900 flex items-center">
-              <span className="px-2 py-[0.5px] h-[18px] tracking-wide flex items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-blue-700 text-[9px] font-medium mr-2 text-white">
+              <span className="px-2 py-[0.5px] h-[18px] tracking-wide flex items-center justify-center rounded-full bg-gradient-to-r from-primary/20 to-primary text-[9px] font-medium mr-2 text-white">
                 NEW
               </span>
-              Explore the flowentech
+              Explore the fireflyqa
             </span>
           </button>
         </Container>
@@ -138,25 +59,25 @@ function Hero() {
               </h1> */}
             <div className="max-w-3xl flex flex-col gap-6 mx-auto mt-8">
               <h1 className="font-medium text-4xl md:text-6xl lg:text-7xl text-primary/90 text-center tracking-tighter">
-                <span className="font-uncut">Ultimate destination</span>
+                <span className="font-uncut font-title">Contracting & Hospitality</span>
                 <br />
-                <span className="font-uncut">for Software solutions.</span>
+                <span className="font-uncut">Solutions Excellence</span>
               </h1>
             </div>
           </Container>
           <Container delay={0.2}>
             <p className="max-w-xl mx-auto mt-2 text-base lg:text-lg text-center text-muted-foreground">
-              Scale your application, create your idea to mvp, AI-powered saas & insights to boost your brand and campaigns.
+             Leading service provider specializing in contracting and hospitality solutions. We deliver high-quality services including MEP, HVAC, BAS, renovation, installation, maintenance, and skilled manpower supply tailored to exceed your expectations
             </p>
           </Container>
           <Container delay={0.2} className="z-20 mt-8">
             <div className="flex items-center justify-center gap-5 mt-2 md:mt-6 lg:mt-6">
               <Link
                 className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
-                href="https://calendly.com/flowentech/30min"
+                href="https://calendly.com/fireflyqa/30min"
                 target="_blank"
               >
-                Schedule a Call
+                Request Consultation
               </Link>
 
               <Link

@@ -1,30 +1,33 @@
 export const faqItems = [
   {
     id: 1,
-    title: "How long does it take to complete a project?",
+    title: "How long does it take to complete a service project?",
     subtitle: "",
     content:
-      "The timeline for each project varies depending on its scope and complexity. We work closely with our clients to establish realistic deadlines and ensure timely delivery without compromising quality.",
+      "Project timelines vary depending on the type and complexity of the service—be it manpower deployment, MEP installation, or renovation. We provide clear timelines after the initial consultation and ensure timely execution with quality assurance.",
   },
   {
     id: 2,
-    title: "What development methodologies do you follow?",
-    content: "We adhere to industry-standard methodologies, including Agile and Scrum, to ensure efficient project management and high-quality deliverables.",
+    title: "What industries do you cater to?",
+    content:
+      "We serve a wide range of sectors including hospitality, commercial buildings, healthcare, industrial facilities, and residential projects—delivering tailored solutions for each client’s needs.",
   },
   {
     id: 3,
-    title: "What communication channels do you use?",
-    content: "We maintain transparent communication through email, Slack, Zoom, and scheduled meetings to keep our clients informed and involved throughout the project lifecycle.",
+    title: "Do you offer both skilled and unskilled manpower?",
+    content:
+      "Yes, we provide both skilled and unskilled manpower based on your project requirements. Our workforce is trained, reliable, and ready to meet short-term or long-term demands.",
   },
   {
     id: 4,
-    title: "Can you handle large-scale or complex projects?",
+    title: "Can you handle end-to-end MEP and renovation work?",
     content:
-      "Absolutely. Our team is equipped with the expertise and resources to manage large-scale and complex projects, ensuring scalability, performance, and seamless execution.",
+      "Absolutely. FireflyQA specializes in full-scope Mechanical, Electrical, and Plumbing (MEP) services as well as turnkey renovation solutions—covering planning, design, installation, and ongoing maintenance.",
   },
   {
     id: 5,
-    title: "Do you provide ongoing support and maintenance?",
-    content: "Yes, we offer comprehensive post-launch support and maintenance services to ensure your software remains up-to-date, secure, and fully functional.",
+    title: "Do you provide maintenance and post-project support?",
+    content:
+      "Yes, we offer ongoing maintenance and support services to ensure your systems and facilities remain in optimal condition. This includes HVAC systems, kitchen equipment, and general infrastructure upkeep.",
   },
 ];
