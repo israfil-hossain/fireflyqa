@@ -2,7 +2,7 @@ import { PostMetadata } from "@/lib/types";
 import Link from "next/link";
 import { Card,CardContent, CardHeader } from "../ui/card";
 import Image from "next/image";
-import { logo2 } from "@/assets";
+import { logo } from "../../../public/images";
 
 type Props = {
   post: PostMetadata;
@@ -29,7 +29,7 @@ export default function BlogCard({ post }: Props) {
         <div className="mt-3 flex gap-3 items-center">
           {post?.author.profilePicture && (
             <Image
-              src={logo2}
+              src={logo}
               alt="profile"
               className="h-7 w-7 rounded-full"
               width={100} 

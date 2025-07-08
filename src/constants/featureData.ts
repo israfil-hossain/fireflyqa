@@ -33,3 +33,27 @@ export const featureData = [
     icon: support,
   },
 ];
+
+export const benefitsData = [
+  {
+    id: 1,
+    title: "Effortless Customization",
+    description:
+      "Easily tailor every element to match your unique needs. Our intuitive approach ensures a seamless experience.",
+    icon: approach, // Replace with the actual icon if needed
+  },
+  {
+    id: 2,
+    title: "Fully Responsive Design",
+    description:
+      "Enjoy a flawless experience on any device. Our solutions adapt perfectly to different screen sizes and resolutions.",
+    icon: template,
+  },
+  {
+    id: 3,
+    title: "Dedicated Support",
+    description:
+      "Our expert team is always ready to assist you. Get fast, friendly, and professional support whenever you need it.",
+    icon: users,
+  },
+];
