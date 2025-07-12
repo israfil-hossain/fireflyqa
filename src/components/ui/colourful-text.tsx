@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React from "react";
 import { motion } from "motion/react";
@@ -27,7 +28,7 @@ export default function ColourfulText({ text }: { text: string }) {
     }, 5000,[colors]);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [colors]);
 
   return text.split("").map((char, index) => (
     <motion.span

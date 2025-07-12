@@ -1,7 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { getPostBySlug } from "@/lib/requests";
-import { useQuery } from "@tanstack/react-query";
 import { singleBlogPosts } from "@/constants/blog";
 import Link from "next/link";
 import { Button } from "../ui/button";

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -124,6 +125,7 @@ const Particles: React.FC<ParticlesProps> = ({
 
     useEffect(() => {
         onMouseMove();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [mousePosition.x, mousePosition.y]);
 
     useEffect(() => {

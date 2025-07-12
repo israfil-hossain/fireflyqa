@@ -1,6 +1,5 @@
 import Blog from "@/components/blogs/Blog";
 import Banner from "@/components/common/Banner";
-import { Newsletter } from "@/components/common/Newsletter";
 
 export default async function Page() {
   return (
@@ -18,9 +17,9 @@ export default async function Page() {
       />
       <Blog />
 
-      <div className="mb-24">
+      {/* <div className="mb-24">
         <Newsletter />
-      </div>
+      </div> */}
     </div>
   );
 }

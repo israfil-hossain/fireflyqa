@@ -1,11 +1,7 @@
 import React from "react";
 import Banner from "../common/Banner";
 import aboutus from "@/assets/aboutus.png";
-import DevelopmentSection from "./Development";
-import OurtechStack from "./OurtechStack";
-import TimelineWorks from "./TimelineWorks";
-import MissonVission from "./MissonVission";
-import { Newsletter } from "../common/Newsletter";
+
 import {
   Users,
   Target,

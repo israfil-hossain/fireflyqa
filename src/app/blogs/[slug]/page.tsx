@@ -1,7 +1,5 @@
 
 import Post from "@/components/blogs/Post";
-import { getPostBySlug } from "@/lib/requests";
-
 
 export async function generateMetadata({
   params,
