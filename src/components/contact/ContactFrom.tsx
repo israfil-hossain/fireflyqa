@@ -25,37 +25,74 @@ export default function ContactForm() {
   });
 
   // Submit function
-  const onSubmit = async (
-    values: any,
-    { setSubmitting, resetForm }: { setSubmitting: any; resetForm: any }
-  ) => {
-    const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbxCZAiMVEPhFH7x05S-HBOYqGSNMcjh8d0d2QFwTRAhO9zVWw5ECor079HLUQEiHFsL/exec";
+  // const onSubmit = async (
+  //   values: any,
+  //   { setSubmitting, resetForm }: { setSubmitting: any; resetForm: any }
+  // ) => {
+  //   const scriptUrl = process.env.NEXT_PUBLIC_APP_SCRIPT_LINK || ""; 
 
-    const formData = new URLSearchParams();
-    formData.append("entry.463545241", values.name);
-    formData.append("entry.212771309", values.email);
-    formData.append("entry.532917720", values.subject);
-    formData.append("entry.1689604989", values.message);
-    try {
-      const response = await fetch(scriptUrl, {
-        method: "POST",
-        body: formData,
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      });
-      if (response.ok) {
-        toast.success("Form submitted successfully!");
-      } else {
-        toast.error("Error Submitting Form");
-      }
-    } catch (error) {
-      console.error("Error submitting the form:", error);
-      toast.error("Error Submitting Form");
+  //   console.log("Script url ", scriptUrl);
+  //   const formData = new URLSearchParams();
+  //   formData.append("entry.463545241", values.name);
+  //   formData.append("entry.212771309", values.email);
+  //   formData.append("entry.532917720", values.subject);
+  //   formData.append("entry.1689604989", values.message);
+  //   try {
+  //     const response = await fetch(scriptUrl, {
+  //       method: "POST",
+  //       body: formData,
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     });
+  //     console.log("response ", response);
+  //     if (response.ok) {
+  //       toast.success("Form submitted successfully!");
+  //     } else {
+  //       toast.error("Error Submitting Form");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting the form:", error);
+  //     toast.error("Error Submitting Form");
+  //   }
+  //   // Form submission logic
+  //   setSubmitting(false);
+  //   resetForm();
+  // };
+
+  const onSubmit = async (
+  values: any,
+  { setSubmitting, resetForm }: { setSubmitting: any; resetForm: any }
+) => {
+  const scriptUrl = process.env.NEXT_PUBLIC_APP_SCRIPT_LINK  || "https://script.google.com/macros/library/d/1cX3oRjtDVKy2vve_cLr3yyf4JsLx1sOwlAOlSWEtTsLK11yg4Uh4SlwN/1"
+
+  const formData = new URLSearchParams();
+  formData.append("name", values.name);
+  formData.append("email", values.email);
+  formData.append("subject", values.subject);
+  formData.append("message", values.message);
+
+  try {
+    const response = await fetch(scriptUrl, {
+      method: "POST",
+      body: formData,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+
+    if (response.ok) {
+      toast.success("Form submitted successfully!");
+      resetForm();
+    } else {
+      toast.error("Submission failed. Try again later.");
     }
-    // Form submission logic
-    setSubmitting(false);
-    resetForm();
-  };
+  } catch (error) {
+    console.error("Form submit error:", error);
+    toast.error("An error occurred.");
+  }
+
+  setSubmitting(false);
+};
+
 
   return (
     <ContainerBox className="lg:flex md:flex md:justify-between justify-center bg-tintblue w-full lg:justify-between  py-10 px-4 my-12">

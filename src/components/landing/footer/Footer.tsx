@@ -56,7 +56,7 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-[#a6079b]" />
-                <span className="font-body text-gray-300 text-sm">+1 (555) 123-4567</span>
+                <span className="font-body text-gray-300 text-sm">+974 77802645</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-[#a6079b]" />
@@ -64,7 +64,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-[#a6079b]" />
-                <span className="font-body text-gray-300 text-sm">Business District, City, Country</span>
+                <span className="font-body text-gray-300 text-sm">Al muntaza, doha, Qatar.</span>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="font-body text-gray-400 text-sm">
-            © 2025 FireFlyqa Trading Contracting Hospitality. All rights reserved. <a href="https://flowentech.com" className="text-primary hover:underline">FlowenTech</a> designed this website.
+            © 2025 FireFlyqa Trading Contracting Hospitality. All rights reserved. Developed By <a href="https://flowentech.com" className="text-primary hover:underline">FlowenTech</a> .
           </p>
         </div>
       </div>

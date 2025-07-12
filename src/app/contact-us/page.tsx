@@ -21,7 +21,14 @@ export default function Page() {
         subtitle="We are here to help and answer any questions you might have. Here is how you can reach us."
         banner={contactus}
         className="rounded-full mb-8 py-3"
+        isSchedule={true}
       />
+      <div>
+        <h2 className="text-2xl font-bold mb-6 text-center">Get in Touch</h2>
+        <p className="text-center text-gray-600 mb-8">
+          Whether you have a question about our services, need assistance, or just want to say hello, we would love to hear from you!
+        </p>
+      </div>
         <ContactForm />
     </div>
   )

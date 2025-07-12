@@ -8,6 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import Promotion from "@/components/landing/navbar/promotion";
 import { Footer } from "@/components/landing/footer/Footer";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <WhatsAppButton />
           <Footer />
         </Providers>
         <SpeedInsights/>

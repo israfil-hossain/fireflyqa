@@ -14,7 +14,7 @@ const Banner = ({
   pageName,
   optionalBg,
   className,
-  isSchedule = true,
+  isSchedule = false,
 }: {
   title: any;
   subtitle?: string;
@@ -34,7 +34,7 @@ const Banner = ({
         height={800}
       />
       <div className="relative  w-full">
-        <Container className="py-20 max-w-6xl mx-auto">
+        <Container className="py-20 max-w-6xl mx-auto items-center ">
           <div className="relative flex flex-col items-center justify-center py-12 lg:py-20 px-0 rounded-2xl lg:rounded-3xl bg-background/20 text-center border border-foreground/20 overflow-hidden">
             <Particles
               refresh
@@ -67,7 +67,7 @@ const Banner = ({
               }}
             />
             <motion.div
-              className="lg:w-1/2 mb-12 lg:mb-0"
+              className="lg:w-1/2 mb-12 lg:mb-0 items-center"
               initial="initial"
               animate="animate"
               variants={staggerChildren}
@@ -84,6 +84,16 @@ const Banner = ({
               <motion.p className="text-lg mb-8 font-uncut" variants={fadeIn}>
                 {subtitle}
               </motion.p>
+              {isSchedule && ( 
+                <Link
+                  className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white mt-8 "
+                  href="https://calendly.com/fireflyqa/30min"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Schedule a Call
+                </Link>
+              )}
             </motion.div>
 
             {banner && (
@@ -113,15 +123,6 @@ const Banner = ({
               >
                 {optionalBg}
               </motion.div>
-            )}
-            {isSchedule ?? (
-              <Link
-                className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white mt-8"
-                href="https://calendly.com/flowentech"
-                target="_blank"
-              >
-                Schedule a Call
-              </Link>
             )}
           </div>
         </Container>
